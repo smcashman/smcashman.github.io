@@ -161,6 +161,9 @@ $(document).ready(function() {
 		$('#snippets').fadeIn();
 	});
 
-
+var queryString=window.location.search;
+if (queryString == '?success') {
+	alert("email sent!");
+}
 
 });
