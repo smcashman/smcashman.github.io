@@ -164,7 +164,9 @@ $(document).ready(function() {
 var queryString=window.location.search;
 console.log(queryString)
 if (queryString == '?success') {
-	alert("email sent!");
+	window.scrollTo(0,document.body.scrollHeight)
+	$("form").html("Email sent successfully!")
+
 }
 
 });
