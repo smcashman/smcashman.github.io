@@ -162,6 +162,7 @@ $(document).ready(function() {
 	});
 
 var queryString=window.location.search;
+console.log(queryString)
 if (queryString == '?success') {
 	alert("email sent!");
 }
