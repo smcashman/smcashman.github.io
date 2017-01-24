@@ -972,3 +972,8 @@ ul.contacts a{
 }
 
 
+input#mailSubmit{
+	width:100px;
+	height:54px;
+}
+
