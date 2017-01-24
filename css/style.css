@@ -920,8 +920,9 @@ input {
 	outline: none;
 	border-radius: 3px;
 	margin-bottom: 20px;
-	text-align: center;
+	padding-left:5px;
 }
+
 textarea {
 	line-height: 50px;
 	height: 200px;
@@ -975,5 +976,14 @@ ul.contacts a{
 input#mailSubmit{
 	width:100px;
 	height:54px;
+}
+
+.skills{
+	text-align: center;
+}
+
+.skills img{
+	height:150px;
+	padding:5px;
 }
 
