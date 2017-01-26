@@ -85,8 +85,11 @@ $(document).ready(function() {
 	});
 
 	// Start Carousel
-	$('#carousellatest').jcarousel();
-	$('#carouselblog').jcarousel();
+	$('#carousellatest').jcarousel()	
+	// $('.jcarousel-prev').jcarouselControl({target: '-=1'});
+	// 	$('.jcarousel-next').jcarouselControl({target: '+=1'});
+
+  $(function() {jQuery('.tsc_carousel_hor .carousel').jcarousel({scroll:2});});
 
 	// Carousel Hover
 	$('div.section.block').hover(

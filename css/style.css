@@ -57,6 +57,10 @@ html, body {
 	-webkit-font-smoothing: subpixel-antialiased;
 }
 
+body{
+	background-color:#e6e6e6;
+}
+
 /******************************************************************
 	Text Selection Styles
 ******************************************************************/
@@ -416,7 +420,7 @@ ul.mainmenu li.active a {
 	height: 20px;
 	background-image: url(../img/carouselcontrols.png);
 	background-repeat: no-repeat;
-	background-color: #0082A5;
+	background-color: #6093e7;
 	cursor: pointer;
 	position: absolute;
 }
@@ -438,6 +442,8 @@ ul.mainmenu li.active a {
 	top: -25px;
 	right: 22px;
 }
+
+
 
 /******************************************************************
 	Footer
@@ -933,6 +939,7 @@ textarea {
 	border-radius: 3px;
 	margin-bottom: 20px;
 	text-align: center;
+	margin-left:50px;
 }
 
 /******************************************************************
@@ -949,18 +956,17 @@ textarea {
 
 .linkedin, .twitter, .github {
 	display: inline-block;
-	border: 1px solid #eaebec;
-	border-radius:50%;
 	height:1.5rem;
 	width:2.5rem;
-	padding: 0.625rem 0;
+	padding: 1rem .5rem;
 	margin: 1.25rem 5px;
 	margin-top:0;
+	margin-bottom:2em;
 	
 }
 
 ul.contacts a{
-	font-size:24pt;
+	font-size:36pt;
 }
 
 /******************************************************************
@@ -976,6 +982,11 @@ ul.contacts a{
 input#mailSubmit{
 	width:100px;
 	height:54px;
+	cursor: pointer;
+}
+
+input#mailSubmit:hover{
+	background-color: #0082A5;
 }
 
 .skills{
@@ -986,4 +997,5 @@ input#mailSubmit{
 	height:150px;
 	padding:5px;
 }
+
 
