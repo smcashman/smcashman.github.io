@@ -1,17 +1,4 @@
-/******************************************************************
-*******************************************************************
 
-Template Name: Treviso
-Theme URI: http://themeforest.ninetofive.me/treviso/
-Description: Responsive HTML5 Template
-Author: ninetofive
-Author URI: http://www.ninetofive.me
-Version: 1.0
-							
-Designed & Handcrafted by Zan from ninetofive.me
-									
-*******************************************************************
-******************************************************************/
 
 /******************************************************************
 	Fonts
@@ -761,7 +748,6 @@ ul.contacts a{
 	ul.mainmenu li {
 		margin:.5px;
 	}
-
 }
 
 
@@ -788,4 +774,8 @@ input#mailSubmit:hover{
 	color: #0082A5;
 	font-weight: 400;
 	font-size: 16pt;
+}
+
+.techUsed{
+	text-decoration: underline;
 }

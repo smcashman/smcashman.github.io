@@ -1,18 +1,3 @@
-/******************************************************************
-*******************************************************************
-
-Template Name: Treviso
-Theme URI: http://themeforest.ninetofive.me/treviso/
-Description: Responsive HTML5 Template
-Author: ninetofive
-Author URI: http://www.ninetofive.me
-Version: 1.0
-							
-Designed & Handcrafted by Zan from ninetofive.me
-									
-*******************************************************************
-******************************************************************/
-
 $(document).ready(function() { 
 
 	//Animated scrolling		   
@@ -86,58 +71,9 @@ $(document).ready(function() {
 
 	// Start Carousel
 	$('#carousellatest').jcarousel()	
-	// $('.jcarousel-prev').jcarouselControl({target: '-=1'});
-	// 	$('.jcarousel-next').jcarouselControl({target: '+=1'});
 
   $(function() {jQuery('.tsc_carousel_hor .carousel').jcarousel({scroll:2});});
 
-	// Services Icon Hover
-	var original_text = $('p#services').text();
-	var services_p = $('p#services');
-	$('div.servicesitem').hover(
-		function () {
-			var text = $(this).children('.front').children('p').text();
-			$(services_p).fadeOut(200,function(){ $(services_p).text(text).fadeIn(200); });
-		},
-		function () {
-			$(services_p).fadeOut(200,function(){ $(services_p).text(original_text).fadeIn(200); });
-		}
-	);
-
-	// Testimonials Icon Hover
-	var original_t_text = $('p#testimonials').text();
-	var testimonials_p = $('p#testimonials');
-	$('div.logos img').hover(
-		function () {
-			var text = $(this).attr('data-text');
-			$(testimonials_p).fadeOut(200,function(){ $(testimonials_p).text(text).fadeIn(200); });
-		},
-		function () {
-			$(testimonials_p).fadeOut(200,function(){ $(testimonials_p).text(original_text).fadeIn(200); });
-		}
-	);
-
-	// About Us Quote Hover
-	$('div.quotefade').hover(
-		function () {
-			$(this).children('div.quotehover').fadeIn('slow');
-		},
-		function () {
-			$(this).children('div.quotehover').fadeOut('slow');
-		}
-	);
-
-	// Portfolio
-	// $(function(){
-	// 	$('ul.portfolio').mixitup({
-	// 		targetSelector: '.item',
-	// 		filterSelector: '.filter',
-	// 		easing: 'smooth',
-	// 		effects: ['fade'],
-	// 		layoutMode: 'grid',
-	// 		targetDisplayGrid: 'inline-block'
-	// 	});
-	// });
 
 var queryString=window.location.search;
 console.log(queryString)
