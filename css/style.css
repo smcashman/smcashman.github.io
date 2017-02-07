@@ -784,3 +784,8 @@ input#mailSubmit:hover{
 	padding:10px;
 }
 
+.projectTitle {
+	color: #0082A5;
+	font-weight: 400;
+	font-size: 16pt;
+}
