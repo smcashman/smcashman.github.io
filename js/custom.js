@@ -91,18 +91,6 @@ $(document).ready(function() {
 
   $(function() {jQuery('.tsc_carousel_hor .carousel').jcarousel({scroll:2});});
 
-	// Carousel Hover
-	$('div.section.block').hover(
-		function () {
-			$(this).children('div.hover').fadeIn('slow');
-			$(this).children('div.content').fadeOut('slow');
-		},
-		function () {
-			$(this).children('div.hover').fadeOut('slow');
-			$(this).children('div.content').fadeIn('slow');
-		}
-	);
-
 	// Services Icon Hover
 	var original_text = $('p#services').text();
 	var services_p = $('p#services');
@@ -140,29 +128,16 @@ $(document).ready(function() {
 	);
 
 	// Portfolio
-	$(function(){
-		$('ul.portfolio').mixitup({
-			targetSelector: '.item',
-			filterSelector: '.filter',
-			easing: 'smooth',
-			effects: ['fade'],
-			layoutMode: 'grid',
-			targetDisplayGrid: 'inline-block'
-		});
-	});
-
-	// Blog Post Open
-	$('a.openpost').click(function(){
-		var id = $(this).attr('data-id');
-		$('#snippets').hide();
-		$('article.full[data-id="'+id+'"]').show();
-		$('#postsfull').fadeIn();
-	});
-	$('a.backtoblog').click(function(){
-		$('#postsfull').hide();
-		$('article.full').hide();
-		$('#snippets').fadeIn();
-	});
+	// $(function(){
+	// 	$('ul.portfolio').mixitup({
+	// 		targetSelector: '.item',
+	// 		filterSelector: '.filter',
+	// 		easing: 'smooth',
+	// 		effects: ['fade'],
+	// 		layoutMode: 'grid',
+	// 		targetDisplayGrid: 'inline-block'
+	// 	});
+	// });
 
 var queryString=window.location.search;
 console.log(queryString)
@@ -171,5 +146,8 @@ if (queryString == '?success') {
 	$("form").html("Email sent successfully!")
 
 }
+
+
+
 
 });

@@ -7,15 +7,11 @@
 <link href="css/style.css" rel="stylesheet" type="text/css" />
 <!-- Load Icon Font -->
 <link href="css/webfont.css" rel="stylesheet" type="text/css" />
-<!-- FontAwesome --!>
-<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
-<!-- Load jQuery library -->
+<link href="https://fonts.googleapis.com/css?family=Pangolin" rel="stylesheet">
+
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/jquery.jcarousel.js"></script>
-<!-- <script type="text/javascript" src="js/jquery.jcarousel-control.min.js"></script> -->
-
-
-<!-- Load MixItUup js -->
+<script src="https://use.fontawesome.com/80b61f6b56.js"></script>  
 
 <!-- Load js -->
 <script type="text/javascript" src="js/custom.js"></script>
@@ -30,7 +26,7 @@
 			<li class="active"><a href="#home">Home</a></li>
 			<li><a href="#about">About</a></li>
 			<li><a href="#portfolio">Recent Projects</a></li>
-			<!-- <li><a href="#blog">Blog</a></li> -->
+			<li><a href="#skillsection">Skills & Languages</a></li>
 			<li><a href="#contact">Contact</a></li>
 		</ul>
 	</div>
@@ -71,145 +67,128 @@
 			<ul class="carousel" id="carousellatest">
 
 				<li>
-					<div class="section block">	
+					<div class="section block" id="allaboard">	
 						<img src="img/homepage.jpg">
 						<div class="content">
 							<h5>AllAboard</h5>
 							<h6>Node.js, Express, NodeMailer, MongoDB</h6>
+							<p>A modern one-page app to keep track of new employees through the on-boarding process.<br>
+							Created so I can stop managing this process with post-its and the scrap paper all over my desk.<br>
+							Web-based, so you can manage your team from anywhere with a WIFI signal.</p>
+							
 						</div>
 						<div class="hover">
-							<a href="http://frozen-cliffs-63668.herokuapp.com/" class="hover content" target="blank">
-								<h2>+</h2>
-								<h5>AllAboard</h5>
-								<h6>Node.js, Express, NodeMailer, MongoDB</h6>
-							</a>
+							
 						</div>	
 					</div>
+					<a href="http://frozen-cliffs-63668.herokuapp.com/" target="blank"><button class="openallaboard">Open Demo</button></a>
+					<a href="https://github.com/smcashman/AllAboard" target="blank"><button class="showallaboardsouce">View Code</button></a>
 				</li>
 
 				<li>
-					<div class="section block">	
+					<div class="section block" id="bookshelf">	
 						<img src="img/bookshelfshot.png">
 						<div class="content">
 							<h5>Bookshelf</h5>
 							<h6>Node.js & Express</h6>
+							<p> As a book hoarder, I know how hard it is to keep track of what books you have, which ones you've read, and which ones you want to read!<br>
+							Bookshelf is a modern one-page app to help you manage your book collection and get new suggestions based on your favorites. Avoid that awkward moment where you realize you've already read that book you just bought! </p>
+
+
 						</div>
 						<div class="hover">
-							<a href="http://whispering-beyond-60086.herokuapp.com/users/login" class="hover content" target="blank">
-								<h2>+</h2>
-								<h5>Bookshelf</h5>
-								<h6>Node.js & Express</h6>
-							</a>
+		
 						</div>	
 					</div>
+					<a href="https://whispering-beyond-60086.herokuapp.com/users/login" target="blank"><button class="openallaboard">Open Demo</button></a>
+					<a href="https://github.com/smcashman/Books" target="blank"><button class="showallaboardsouce">View Code</button></a>
 				</li>
 				
 				<!-- End Single Block -->
 					<li>
-					<div class="section block">	
+					<div class="section block" id="gifhunter">	
 						<img src="img/gifhuntscreen.jpg">
 						<div class="content">
 							<h5>GifHunter</h5>
 							<h6>React & Redux</h6>
+							<p> An internet tool for the cool kids.<br>
+							Search for Gifs (try an emotion, favorite tv show, or cats. always cats). <br>
+							Create an account to save your favorite Gifs.
 						</div>
 						<div class="hover">
-							<a href="https://hidden-plateau-72182.herokuapp.com/" class="hover content" target="blank">
-								<h2>+</h2>
-								<h5>GifHunter</h5>
-								<h6>React & Redux</h6>
-							</a>
+							
 						</div>	
 					</div>
-				</li>
-
-				<!-- Start Single Block -->
-				<li>
-					<div class="section block">	
-						<img src="img/pantryscreenshot.png">
-						<div class="content">
-							<h5>Shopping List</h5>
-							<h6>Design, HTML, CSS, JQuery</h6>
-						</div>
-						<div class="hover">
-							<a href="https://smcashman.github.io/pantry/" class="hover content" target='blank'>
-								<h2>+</h2>
-								<h5>Shopping List</h5>
-								<h6>Design, HTML, CSS, JQuery</h6>
-							</a>
-						</div>	
-					</div>
+					<a href="https://hidden-plateau-72182.herokuapp.com/" target="blank"><button class="openallaboard">Open Demo</button></a>
+					<a href="https://github.com/smcashman/GifHunter" target="blank"><button class="showallaboardsouce">View Code</button></a>
 				</li>
 				
-				<!-- End Single Block -->
-
-				<!-- Start Single Block -->
 				<li>
-					<div class="section block">	
+					<div class="section block" id="publicart">	
+						<img src="img/publicart.jpg">
+						<div class="content">
+							<h5>PublicArt</h5>
+							<h6>Google Maps API, Ajax, Jquery</h6>
+							<p>My favorite part of traveling to new places is exploring the art scene - museums, street art, public monuments and art pieces! <br>
+							Using the FourSquare API for place suggestions and the Google API for mapping, explore the hot art scene in your neighborhood or for your upcoming trip!</p>
+						</div>
+						<div class="hover">
+							
+						</div>	
+					</div>
+					<a href="https://smcashman.github.io/publicart/" target="blank"><button class="openallaboard">Open Demo</button></a>
+					<a href="https://github.com/smcashman/publicart" target="blank"><button class="showallaboardsouce">View Code</button></a>
+				</li>
+				<li>
+					<div class="section block" id="artquiz">	
 						<img src="img/artquizscreenshot.png">
 						<div class="content">
 							<h5>Art Quiz</h5>
 							<h6>HTML, CSS, Jquery</h6>
+							<p> Test your knowledge of the Impressionists with this quiz!</p>
 						</div>
 						<div class="hover">
-							<a href="https://smcashman.github.io/artquiz/" class="hover content" target="blank">
-								<h2>+</h2>
-								<h5>Art Quiz</h5>
-								<h6>HTML, CSS, Jquery</h6>
-							</a>
+							
 						</div>	
 					</div>
+					<a href="https://smcashman.github.io/artquiz/" target="blank"><button class="openallaboard">Open Demo</button></a>
+					<a href="https://github.com/smcashman/artquiz" target="blank"><button class="showallaboardsouce">View Code</button></a>
 				</li>
+				<!-- Start Single Block -->
+				<li>
+					<div class="section block" id="pantry">	
+						<img src="img/pantryscreenshot.png">
+						<div class="content">
+							<h5>Shopping List</h5>
+							<h6>HTML, CSS, JQuery</h6>
+							<p> Simple shopping list using JQuery</p>
+						</div>
+						<div class="hover">
+							
+						</div>	
+					</div>
+					<a href="https://smcashman.github.io/pantry/" target="blank"><button class="openallaboard">Open Demo</button></a>
+					<a href="https://github.com/smcashman/pantry" target="blank"><button class="showallaboardsouce">View Code</button></a>
+				</li>
+				
 
 				<li>
-					<div class="section block">	
+					<div class="section block" id="tictac">	
 						<img src="img/tictactoescreenshot.png">
 						<div class="content">
 							<h5>Tic Tac Toe</h5>
 							<h6>Retro styling with JQuery for functionality</h6>
 						</div>
 						<div class="hover">
-							<a href="https://smcashman.github.io/tictactoe/" class="hover content" target="blank">
-								<h2>+</h2>
-								<h5>Tic Tac Toe</h5>
-								<h6>Retro styling with JQuery for functionality</h6>
-							</a>
+							
 						</div>	
 					</div>
+					<a href="https://smcashman.github.io/tictactoe/" target="blank"><button class="openallaboard">Open Demo</button></a>
+					<a href="https://github.com/smcashman/tictactoe" target="blank"><button class="showallaboardsouce">View Code</button></a>
 				</li>
-				<!-- End Single Block -->
-
-				<!-- Start Single Block -->
-				<li>
-					<div class="section block">	
-						<img src="img/publicart.jpg">
-						<div class="content">
-							<h5>PublicArt</h5>
-							<h6>Google Maps API, Ajax, Jquery</h6>
-						</div>
-						<div class="hover">
-							<a href="https://smcashman.github.io/publicart/" class="hover content" target="blank">
-								<h2>+</h2>
-								<h5>PublicArt</h5>
-								<h6>Google Maps API, Ajax, Jquery</h6>
-							</a>
-						</div>	
-					</div>
-				</li>
-				<!-- End Single Block -->
-
 			</ul>
 
 		</div>
-
-		<!-- Clear :) -->
-		<div class="clear"></div>
-
-		<!-- DC Horizontal Carousel CSS -->
-
-
-		<!-- Start HomePage Section -->
-	
-		<!-- End HomePage Section -->
 
 		<!-- Clear :) -->
 		<div class="clear"></div>
@@ -240,300 +219,6 @@
 		<!-- Clear :) -->
 		<div class="clear"></div>
 	</div>
-	<!-- End Content -->
-	
-	<!-- Start Section Divider -->
-	
-	<!-- Clear :) -->
-	<div class="clear"></div>
-	<!-- End Content -->
-
-	<!-- Start Section Divider -->
-	<!-- <div class="section divider">
-		<h2>Our Blog</h2>
-		<a class="scroll" id="blog"></a>
-	</div> -->
-	<!-- End Section Divider -->
-
-	<!-- Start Content -->
-	<!-- <div class="content"> -->
-
-		<!-- Start Content -->
-		<!-- <!-- <div class="content sidebar" id="snippets">
-
-			<!-- Start Article -->
-			<!-- <article class="post">				
-				<div class="hover">	
-					<div class="postimage">
-						<img src="img/post1.jpg">
-						<div class="posthover"><a class="openpost" href="javascript:void(0);" data-id="2">read more</a></div>
-					</div>
-					<div class="postinfo">
-						<h6 class="mid-gray"><b class="dark-gray">Posted:</b> 17/9/13</h6>
-						<h6 class="mid-gray"><b class="dark-gray">Author:</b> Zan</h6>
-						<h6 class="mid-gray"><b class="dark-gray">Comments:</b> 3</h6>
-					</div>
-				</div>
-
-				<h3>A boat</h3>
-				<p>ONE POTATO TWO POTATO FLOOR
-				tempor incididunt ut labore et dolore magna aliqua.</p>
-
-			</article> -->
-			<!-- End Article -->
-
-			<!-- Start Article -->
-			<!-- <article class="post">
-				<div class="hover">	
-					<div class="postimage">
-						<img src="img/post2.jpg">
-						<div class="posthover"><a class="openpost" href="javascript:void(0);" data-id="2">read more</a></div>
-					</div>
-					<div class="postinfo">
-						<h6 class="mid-gray"><b class="dark-gray">Posted:</b> 17/9/13</h6>
-						<h6 class="mid-gray"><b class="dark-gray">Author:</b> Zan</h6>
-						<h6 class="mid-gray"><b class="dark-gray">Comments:</b> 3</h6>
-					</div>
-				</div>
-
-				<h3>Another boat</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua.</p>
-
-			</article> -->
-			<!-- End Article -->
-
-			<!-- Start Article -->
-			<!-- <article class="post">				
-				<div class="hover">	
-					<div class="postimage">
-						<img src="img/post3.jpg">
-						<div class="posthover"><a class="openpost" href="javascript:void(0);" data-id="2">read more</a></div>
-					</div>
-					<div class="postinfo">
-						<h6 class="mid-gray"><b class="dark-gray">Posted:</b> 17/9/13</h6>
-						<h6 class="mid-gray"><b class="dark-gray">Author:</b> Zan</h6>
-						<h6 class="mid-gray"><b class="dark-gray">Comments:</b> 3</h6>
-					</div>
-				</div>
-
-				<h3>One more boat</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua.</p>
-
-			</article> -->
-			<!-- End Article -->
-
-			
-			<!-- Clear :) -->
-			<div class="clear"></div>
-		</div>
-		<!-- End Content --> 
-
-		<!-- Start Content -->
-		<div class="content sidebar" id="postsfull">
-
-			<!-- Start Article -->
-			<article class="post full" data-id="1">				
-				<div class="hover">	
-					<div class="postimage">
-						<img src="img/post1.jpg">
-						<div class="posthover"><a class="backtoblog" href="javascript:void(0);" data-id="1"><< back to blog</a></div>
-					</div>
-					<div class="postinfo">
-						<h6 class="mid-gray"><b class="dark-gray">Posted:</b> 17/9/13</h6>
-						<h6 class="mid-gray"><b class="dark-gray">Author:</b> Zan</h6>
-						<h6 class="mid-gray"><b class="dark-gray">Comments:</b> 3</h6>
-					</div>
-				</div>
-				<div class="clear"></div>
-				<h3>A boat</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-				<br>
-				<br>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-				<br>
-				<br>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-				<br>
-				<br>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-				</p>
-			</article>
-			<!-- End Article -->
-
-			<!-- Start Article -->
-			<article class="post full" data-id="2">				
-				<div class="hover">	
-					<div class="postimage">
-						<img src="img/post2.jpg">
-						<div class="posthover"><a class="backtoblog" href="javascript:void(0);" data-id="1"><< back to blog</a></div>
-					</div>
-					<div class="postinfo">
-						<h6 class="mid-gray"><b class="dark-gray">Posted:</b> 17/9/13</h6>
-						<h6 class="mid-gray"><b class="dark-gray">Author:</b> Zan</h6>
-						<h6 class="mid-gray"><b class="dark-gray">Comments:</b> 3</h6>
-					</div>
-				</div>
-				<div class="clear"></div>
-				<h3>Another boat</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-				<br>
-				<br>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-				<br>
-				<br>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-				<br>
-				<br>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-				</p>
-			</article>
-			<!-- End Article -->
-
-			<!-- Start Article -->
-			<article class="post full" data-id="3">				
-				<div class="hover">	
-					<div class="postimage">
-						<img src="img/post3.jpg">
-						<div class="posthover"><a class="backtoblog" href="javascript:void(0);" data-id="1"><< back to blog</a></div>
-					</div>
-					<div class="postinfo">
-						<h6 class="mid-gray"><b class="dark-gray">Posted:</b> 17/9/13</h6>
-						<h6 class="mid-gray"><b class="dark-gray">Author:</b> Zan</h6>
-						<h6 class="mid-gray"><b class="dark-gray">Comments:</b> 3</h6>
-					</div>
-				</div>
-				<div class="clear"></div>
-				<h3>One more boat</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-				<br>
-				<br>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-				<br>
-				<br>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-				<br>
-				<br>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-				</p>
-			</article>
-			<!-- End Article -->
-
-			<!-- Clear :) -->
-			<div class="clear"></div>
-		</div>
-		<!-- End Content -->
-
-		<!-- Start Sidebar -->
-		<div id="sidebar" class="sidebar">
-			<!-- 
-			<div class="widget">
-				<h5>Blog Categories</h5>
-				<ul>
-					<li><h6><b class="light-gray">></b> <a href="#">Lifestyle</a><span class="light-gray"> (4)</span></h6></li>
-					<li><h6><b class="light-gray">></b> <a href="#">Design</a><span class="light-gray"> (2)</span></h6></li>
-					<li><h6><b class="light-gray">></b> <a href="#">Dribbble</a><span class="light-gray"> (6)</span></h6></li>
-					<li><h6><b class="light-gray">></b> <a href="#">Food</a><span class="light-gray"> (1)</span></h6></li>
-					<li><h6><b class="light-gray">></b> <a href="#">Twitter</a><span class="light-gray"> (2)</span></h6></li>
-					<li><h6><b class="light-gray">></b> <a href="#">Quotes</a><span class="light-gray"> (7)</span></h6></li>
-					<li><h6><b class="light-gray">></b> <a href="#">Late Night</a><span class="light-gray"> (1)</span></h6></li>
-				</ul>
-			</div> -->
-
-			<!-- <div class="widget">
-				<h5>Text Widget</h5>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-			</div> -->
-
-			<!-- <div class="widget twitter">
-				<h5>Twitter Widget</h5>
-				<a class="tweet" href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a>
-				<a class="tweet" href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a>
-				<a class="tweet" href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a>
-			</div> -->
-			
-			<!-- Clear :) -->
-			<div class="clear"></div>
-		</div>
-		<!-- End Sidebar -->
-
-		<!-- Clear :) -->
-		<div class="clear"></div>
-	</div>
-	<!-- End Content -->
-
-	<!-- Start Section Divider -->
-	
-		<!-- Clear :) -->
-		<div class="clear"></div>
-	
-	<!-- End Content -->
 	
 	<!-- Start Section Divider -->
 	<div class="section divider" id="contactsection">
@@ -544,20 +229,18 @@
 
 	<!-- Start Content -->
 	<div class="content contact">
-
-		<!-- Start Main Paragraph -->
 		
 		<ul class="contacts">
 			<li class="linkedin"><a href="https://www.linkedin.com/in/sara-cashman-510a301b" target="blank"><i class="fa fa-linkedin" aria-hidden="true" style:"font-size: 200%;"></i></a></li>
 			<li class="github"><a href="https://github.com/smcashman" target="blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
 			<li class="twitter"><a href="https://www.twitter.com/smargaretc" target ="blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li> 
 		</ul>
-		<!-- Start Main Paragraph -->
 		
+		<!-- form for email contact -->
 		<form action="http://stylishflooringinc.com/sara.php" method="post">
-			name: <input type="text" name="name"/><br>
-			email: <input type="text" name="email" /><br>
-			message: <br><textarea name="message"></textarea><br>
+			name: <input type="text" name="name" id="emailName"/><br>
+			email: <input type="text" name="email" id="emailEmail"/><br>
+			message: <br><textarea name="message" id="emailMessage"></textarea><br>
 			<input id="mailSubmit" type="submit" value="send"/>
 		</form>
 
