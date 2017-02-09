@@ -101,5 +101,4 @@ $(window).resize(function(){
   }
 }); 
 
-
 });

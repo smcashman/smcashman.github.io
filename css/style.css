@@ -768,13 +768,17 @@ nav.clearfix a#pull {
   }
   nav.clearfix a#pull:after {
     content:"";
-    background: url('nav-icon.png') no-repeat;
+    background: url(../img/nav-icon.png) no-repeat;
     width: 30px;
     height: 30px;
     display: inline-block;
     position: absolute;
     right: 15px;
     top: 10px;
+  }
+
+  body > div:nth-child(1) > div.menuHeader > nav > ul{
+  	width:100%;
   }
 }
 @media only screen and (max-width : 320px) {
