@@ -711,9 +711,14 @@ ul.contacts a{
 	Mobile
 ******************************************************************/
 @media all and (max-width: 960px) {
-	ul#carousellatest {
-		max-width: 750px
-		overflow:hidden;
+
+	ul#carousellatest{
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	div.section.block{
+		width:100%;
 	}
 
 	h2#portfolio{
@@ -721,20 +726,14 @@ ul.contacts a{
 	}
 
 	div.section ul{
-		max-width:750px;
+		max-width:100%;
 		margin: 0 auto;
 	}
 
-	div.jcarousel-clip{
-		max-width: 750px;
+	#portfolioWrapper{
+		width:80%;
 	}
 
-	ul#carousellatest:after{
-		max-width: 750px;
-	}
-	body > div:nth-child(6) > div.section.full > div{
-		max-width: 750px;
-	}
 
 	#emailName, #emailEmail, #emailMessage {
 	width:10em;
@@ -742,11 +741,14 @@ ul.contacts a{
 
 	.skills img{
 		padding:5px;
-		display: inlin;
 	}
 
-	ul.mainmenu li {
-		margin:.5px;
+	body {
+    overflow-x: hidden;
+	}
+
+	blockquote{
+		width:100%;
 	}
 }
 
@@ -778,4 +780,31 @@ input#mailSubmit:hover{
 
 .techUsed{
 	text-decoration: underline;
+}
+
+.menuHeader ul {
+      padding:0;
+      margin:0;
+  }
+.menuHeader li {
+        display: inline-block;
+        float: left;
+        list-style: none;
+        padding: 0 0 0 5px;
+        margin: 0;
+      }
+
+.menuIcon {
+    display: none;
+    background: #000;
+    width: 100%;
+    text-align: center;
+}
+.menuIcon:hover {
+      background: #999;
+    }
+.menuIcon a {
+	width: 100%;
+      display: inline-block;
+      color: #fff;
 }
