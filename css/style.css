@@ -320,62 +320,6 @@ a.scrolldown {
 	color: #FFF;
 	font-weight: 300;
 }
-
-/******************************************************************
-	Menu
-******************************************************************/
-.menubar {
-	position: fixed;
-	top: 0px;
-	height: 80px;
-	width: 100%;
-	z-index: 9999;
-	background-color: #FFF;
-	margin-top: -80px;
-	-moz-box-shadow: 0 2px 2px rgba(0,0,0,0.2);
-	-webkit-box-shadow: 0 2px 2px rgba(0,0,0,0.2);
-	box-shadow: 0 2px 2px rgba(0,0,0,0.2);
-}
-.menubar.alt {
-	background-color: #f6f6f6;
-}
-a.logo {
-	float: left;
-	display: block;
-	width: 120px;
-	height: 30px;
-	margin: 27px 0px 0px 40px;
-
-}
-ul.mainmenu {
-	font-family: "Open Sans", Verdana, Arial, sans-serif;
-	float: right;
-	margin: 0px 40px 0px 0px;
-	text-transform: uppercase;
-	font-weight: 300;
-}
-ul.mainmenu li {
-	cursor: pointer;
-	display: inline-block;
-	padding: 30px 10px 31px 10px;
-}
-ul.mainmenu li a {
-	font-size: 12px;
-	color: #838282;
-	-webkit-transition: color 400ms ease;
-	-moz-transition: color 400ms ease;
-	-o-transition: color 400ms ease;
-	-ms-transition: color 400ms ease;
-	transition: color 400ms ease;
-}
-ul.mainmenu li:hover a {
-	color: #0082A5;
-}
-ul.mainmenu li.active a {
-	font-weight: bold;
-	color: #0082A5;
-}
-
 /******************************************************************
 	jCarousel
 ******************************************************************/
@@ -751,7 +695,98 @@ ul.contacts a{
 		width:100%;
 	}
 }
+/*menu style*/
+nav.clearfix {
+  height: 40px;
+  width: 100%;
+  background: #455868;
+  font-size: 11pt;
+  font-weight: bold;
+  position: relative;
+  border-bottom: 2px solid #283744;
+}
+nav.clearfix ul {
+  padding: 0;
+  margin: 0 auto;
+  width: 600px;
+  height: 40px;
+}
+nav.clearfix li {
+  display: inline;
+  float: left;
+}
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    *zoom: 1;
+}
+nav.clearfix a {
+  color: #fff;
+  display: inline-block;
+  width: 100px;
+  text-align: center;
+  text-decoration: none;
+  line-height: 40px;
+  text-shadow: 1px 1px 0px #283744;
+}
+nav.clearfix li a {
+  border-right: 1px solid #576979;
+  box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+}
+nav.clearfix li:last-child a {
+  border-right: 0;
+}
+nav.clearfix a:hover, nav.clearfix a:active {
+  background-color: #8c99a4;
+}
+nav.clearfix a#pull {
+  display: none;
+}  
+/*menu media queries*/
 
+@media only screen and (max-width : 480px) {
+  nav.clearfix {
+    border-bottom: 0;
+  }
+  nav.clearfix ul {
+    display: none;
+    height: auto;
+  }
+  nav.clearfix a#pull {
+    display: block;
+    background-color: #283744;
+    width: 100%;
+    position: relative;
+  }
+  nav.clearfix a#pull:after {
+    content:"";
+    background: url('nav-icon.png') no-repeat;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+  }
+}
+@media only screen and (max-width : 320px) {
+  nav.clearfix li {
+    display: block;
+    float: none;
+    width: 100%;
+  }
+  nav.clearfix li a {
+    border-bottom: 1px solid #576979;
+  }
+}
 
 input#mailSubmit{
 	width:100px;
