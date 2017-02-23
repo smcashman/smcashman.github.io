@@ -30,9 +30,9 @@
   <div class="menuHeader">
   	<nav class="clearfix">
 		<ul class="mainmenu clearfix">
-			<li class="active"><a href="#home">Home</a></li>
-			<li><a href="#about">About</a></li>
-			<li><a href="#portfolio">Recent Projects</a></li>
+			<li class="active"><a href="#home" id="homeLink">Home</a></li>
+			<li><a href="#about" id="aboutLink">About</a></li>
+			<li><a href="#portfolio">Projects</a></li>
 			<li><a href="#skillsection">Skills</a></li>
 			<li><a href="#contact">Contact</a></li>
 		</ul>
@@ -47,7 +47,8 @@
 	<div class="home hero">
 		<div class="overlay"></div>
 		<div class="herowrapper">
-			<h1>Hi, I'm Sara </h1>
+			<h1> Hi, I'm Sara </h1>
+			<h2> I'm a full stack web developer based in Boston </h2>
 		</div>
 		<a href="javascript:void(0);" class="scrolldown">
 			
@@ -58,7 +59,7 @@
 
 	<!-- Start BlockQuote -->
 	<div class="blockquote main" id="about">
-		<blockquote> I'm a web developer in <b>Boston</b>. I love clean design, old books, and art.</blockquote>
+		<p id="blockquote">I specialize in the MERN stack (MongoDB, Express, React, and Node.js). I love learning all types of new skills and tools, and exploring new languages. <br> When I'm not programming, I love to read, travel, and volunteer at the Museum of Fine Arts Boston.</p>
 	</div>
 	<!-- End BlockQuote -->
 
@@ -67,19 +68,19 @@
 
 		<!-- Start HomePage Section -->
 		<div class="section divider"   id="projectsection">
-		<h2 id="servicestitle">Recent Projects</h2>
+		<h2 id="portfolio">Recent Projects</h2>
 		<a class="scroll" id="services"></a>
 	</div>
 	<div class="content">
 		<div class="section full" id="portfolioWrapper">
-			<h2 id="portfolio">Recent Projects</h2>
+			<!-- <h2 id="portfolio">Recent Projects</h2> -->
 
-			<ul class="carousel" id="carousellatest">
+			<ul class="portfolioEntries">
 
-				<li>
+				<li class="portfolioItem">
 					<div class="section block" id="allaboard">	
-						<img src="img/homepage.jpg">
-						<div class="content">
+						<img src="img/homepage.jpg" alt="AllAboard home page screenshot">
+						<div class="portfolioContent">
 							<h5 class="projectTitle">AllAboard</h5>
 							<h6 class="techUsed">Node.js, Express, NodeMailer, MongoDB</h6>
 							<p>A modern one-page app to keep track of new employees through the on-boarding process.<br>
@@ -87,115 +88,68 @@
 							Web-based, so you can manage your team from anywhere with a WIFI signal.</p>
 							
 						</div>
-						<div class="hover">
-							
-						</div>	
+						<div class="demoButtonWrapper">
+						<button class="openDemoButton"><a href="http://frozen-cliffs-63668.herokuapp.com/" target="blank">Open Demo</a></button>
+					<button class="openSourceCodeButton"><a href="https://github.com/smcashman/AllAboard" target="blank">View Code</a></button>
+				</div>
 					</div>
-					<a href="http://frozen-cliffs-63668.herokuapp.com/" target="blank"><button class="openallaboard">Open Demo</button></a>
-					<a href="https://github.com/smcashman/AllAboard" target="blank"><button class="showallaboardsouce">View Code</button></a>
+
+						
+					
 				</li>
 
-				<li>
+				<li class="portfolioItem">
 					<div class="section block" id="bookshelf">	
-						<img src="img/bookshelfshot.png">
-						<div class="content">
+						<img src="img/bookshelfshot.png" alt="Bookshelf home page screenshot">
+						<div class="portfolioContent">
 							<h5 class="projectTitle">Bookshelf</h5>
 							<h6 class="techUsed">Node.js & Express</h6>
 							<p> As a book hoarder, I know how hard it is to keep track of what books you have, which ones you've read, and which ones you want to read!<br>
 							Bookshelf is a modern one-page app to help you manage your book collection and get new suggestions based on your favorites. </p>
-
-
-						</div>
-						<div class="hover">
 		
-						</div>	
+						</div>
+						<div class="demoButtonWrapper">	
+						<button class="openDemoButton"><a href="https://whispering-beyond-60086.herokuapp.com/users/login" target="blank">Open Demo</a></button>
+					<button class="openSourceCodeButton"><a href="https://github.com/smcashman/Books" target="blank">View Code</a></button>
+				</div>
 					</div>
-					<a href="https://whispering-beyond-60086.herokuapp.com/users/login" target="blank"><button class="openallaboard">Open Demo</button></a>
-					<a href="https://github.com/smcashman/Books" target="blank"><button class="showallaboardsouce">View Code</button></a>
+					
 				</li>
 				
 				<!-- End Single Block -->
-					<li>
+					<li class="portfolioItem">
 					<div class="section block" id="gifhunter">	
-						<img src="img/gifhuntscreen.jpg">
-						<div class="content">
+						<img src="img/gifhuntscreen.jpg" alt="GifHunter home page screenshot">
+						<div class="portfolioContent">
 							<h5 class="projectTitle">GifHunter</h5>
 							<h6 class="techUsed">React & Redux</h6>
 							<p> An internet tool for the cool kids.<br>
 							Search for Gifs (try an emotion, favorite tv show, or cats. always cats). <br>
 							Create an account to save your favorite Gifs.
-						</div>
-						<div class="hover">
-							
 						</div>	
+						<div class="demoButtonWrapper">
+						<button class="openDemoButton">Open Demo<a href="https://hidden-plateau-72182.herokuapp.com/" target="blank"></a></button>
+						<button class="openSourceCodeButton"><a href="https://github.com/smcashman/GifHunter" target="blank">View Code</a></button>
 					</div>
-					<a href="https://hidden-plateau-72182.herokuapp.com/" target="blank"><button class="openallaboard">Open Demo</button></a>
-					<a href="https://github.com/smcashman/GifHunter" target="blank"><button class="showallaboardsouce">View Code</button></a>
+					</div>
+					
 				</li>
 				
-				<li>
+				<li class="portfolioItem">
 					<div class="section block" id="publicart">	
-						<img src="img/publicart.jpg">
-						<div class="content">
+						<img src="img/publicart.jpg" alt="PublicArt home page screenshot">
+						<div class="portfolioContent">
 							<h5 class="projectTitle">PublicArt</h5>
 							<h6 class="techUsed">Google Maps API, Ajax, Jquery</h6>
 							<p>My favorite part of traveling to new places is exploring the art scene - museums, street art, public monuments and art pieces! <br>
 							Using the FourSquare API for place suggestions and the Google API for mapping, explore the hot art scene in your neighborhood or for your upcoming trip!</p>
-						</div>
-						<div class="hover">
-							
 						</div>	
+						<div class="demoButtonWrapper">
+						<button class="openDemoButton"><a href="https://smcashman.github.io/publicart/" target="blank">Open Demo</a></button>
+					<button class="openSourceCodeButton"><a href="https://github.com/smcashman/publicart" target="blank">View Code</a></button>
+				</div>
 					</div>
-					<a href="https://smcashman.github.io/publicart/" target="blank"><button class="openallaboard">Open Demo</button></a>
-					<a href="https://github.com/smcashman/publicart" target="blank"><button class="showallaboardsouce">View Code</button></a>
-				</li>
-				<li>
-					<div class="section block" id="artquiz">	
-						<img src="img/artquizscreenshot.png">
-						<div class="content">
-							<h5 class="projectTitle">Art Quiz</h5>
-							<h6 class="techUsed">HTML, CSS, JQuery</h6>
-							<p> Test your knowledge of the Impressionists with this quiz!</p>
-						</div>
-						<div class="hover">
-							
-						</div>	
-					</div>
-					<a href="https://smcashman.github.io/artquiz/" target="blank"><button class="openallaboard">Open Demo</button></a>
-					<a href="https://github.com/smcashman/artquiz" target="blank"><button class="showallaboardsouce">View Code</button></a>
-				</li>
-				<!-- Start Single Block -->
-				<li>
-					<div class="section block" id="pantry">	
-						<img src="img/pantryscreenshot.png">
-						<div class="content">
-							<h5 class="projectTitle">Shopping List</h5>
-							<h6 class="techUsed">HTML, CSS, JQuery</h6>
-							<p> Simple shopping list using JQuery</p>
-						</div>
-						<div class="hover">
-							
-						</div>	
-					</div>
-					<a href="https://smcashman.github.io/pantry/" target="blank"><button class="openallaboard">Open Demo</button></a>
-					<a href="https://github.com/smcashman/pantry" target="blank"><button class="showallaboardsouce">View Code</button></a>
-				</li>
-				
-
-				<li>
-					<div class="section block" id="tictac">	
-						<img src="img/tictactoescreenshot.png">
-						<div class="content">
-							<h5 class="projectTitle">Tic Tac Toe</h5>
-							<h6 class="techUsed">HTML, CSS, Javascript, JQuery</h6>
-							<p> Retro Tic Tac Toe game. Winner gets to meet a panda. </p>
-						</div>
-						<div class="hover">
-							
-						</div>	
-					</div>
-					<a href="https://smcashman.github.io/tictactoe/" target="blank"><button class="openallaboard">Open Demo</button></a>
-					<a href="https://github.com/smcashman/tictactoe" target="blank"><button class="showallaboardsouce">View Code</button></a>
+					
 				</li>
 			</ul>
 
@@ -209,23 +163,23 @@
 
 	<!-- Start Section Divider -->
 	<div class="section divider"   id="skillsection">
-		<h2 id="servicestitle">Skills & Languages</h2>
-		<a class="scroll" id="services"></a>
+		<h2 id="skillstitle">Skills & Languages</h2>
+		<a class="scroll" id="skillslangs"></a>
 	</div>
 	<!-- End Section Divider -->
 
 	<!-- Start Content -->
 	<div class="content skills">
 
-	<img src="img/html5.png">
-	<img src="img/css3.png">
-	<img src="img/bootstrap.png">
-	<img src="img/javasriptlogo.png">
-	<img src="img/jquery.gif">
-	<img src="img/react.png">
-	<img src="img/node.png">
-	<img src="img/socketio.png">
-	<img src="img/mongo.png">
+	<img src="img/html5.png" alt="HTML5">
+	<img src="img/css3.png" alt="CSS3">
+	<img src="img/bootstrap.png" alt="Bootstrap">
+	<img src="img/javasriptlogo.png" alt="Javascript">
+	<img src="img/jquery.gif" alt="Jquery">
+	<img src="img/react.png" alt="React">
+	<img src="img/node.png" alt="Node">
+	<img src="img/socketio.png" alt="Socket.io">
+	<img src="img/mongo.png" alt="MongoDB">
 
 		<!-- Clear :) -->
 		<div class="clear"></div>
@@ -242,16 +196,16 @@
 	<div class="content contact">
 		
 		<ul class="contacts">
-			<li class="linkedin"><a href="https://www.linkedin.com/in/sara-cashman-510a301b" target="blank"><i class="fa fa-linkedin" aria-hidden="true" style:"font-size: 200%;"></i></a></li>
+			<li class="linkedin"><a href="https://www.linkedin.com/in/sara-cashman-510a301b" target="blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
 			<li class="github"><a href="https://github.com/smcashman" target="blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
 			<li class="twitter"><a href="https://www.twitter.com/smargaretc" target ="blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li> 
 		</ul>
 		
 		<!-- form for email contact -->
 		<form action="http://stylishflooringinc.com/sara.php" method="post">
-			name: <input type="text" name="name" id="emailName"/><br>
-			email: <input type="text" name="email" id="emailEmail"/><br>
-			message: <br><textarea name="message" id="emailMessage"></textarea><br>
+			name: <input type="text" name="name" id="emailName" required/><br>
+			email: <input type="text" name="email" id="emailEmail" required/><br>
+			message: <br><textarea name="message" id="emailMessage" required></textarea><br>
 			<input id="mailSubmit" type="submit" value="send"/>
 		</form>
 

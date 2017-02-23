@@ -29,8 +29,8 @@ blockquote, q {
 	quotes: none;
 }
 
-blockquote:before, blockquote:after, q:before, q:after {
-	content: '';
+#blockquote:before, #blockquote:after, q:before, q:after {
+	
 	content: none;
 }
 table {
@@ -175,22 +175,13 @@ h6 {
 	Main
 ******************************************************************/
 .content {
-	max-width: 960px;
+	max-width: 100%;
 	width: 80%;
 	margin-left: auto;
 	margin-right: auto;
 }
-.content.sidebar {
-	width: 659px;
-	float: left;
-	margin-top: 40px;
-	border-right: 1px solid #e7e7e7;
-}
-.sidebar {
-	width: 300px;
-	float: right;
-}
-blockquote {
+
+#blockquote {
 	font-family: "Open Sans", Verdana, Arial, sans-serif;
 	font-size: 28px;
 	line-height: 60px;
@@ -203,13 +194,19 @@ blockquote {
 	font-weight: 300;
 	font-style: italic;
 }
-blockquote:before {
-	content: '"';
+
+#blockquote span {
+	padding:15px;
+}
+
+
+#blockquote:before {
+	
 	font-weight: bold;
 	font-size: 36px;
 }
-blockquote:after {
-	content: '"';
+#blockquote:after {
+	
 	font-weight: bold;
 	font-size: 36px;
 }
@@ -296,6 +293,11 @@ div.icon {
 	font-size: 40px;
 	font-weight: 300;
 }
+.herowrapper h2{
+	text-align: center;
+	color: #FFF;
+	font-size:28px;
+}
 .herowrapper b {
 	background-color: rgba(255, 255, 255, 0.8);
 	padding: 0px 5px;
@@ -381,193 +383,80 @@ footer.main h6.copyright {
 /******************************************************************
 	Home Page
 ******************************************************************/
-div.section.full {
-	margin: 40px 0px;
-	clear: both;
-	width: 960px;
-	overflow: hidden;
-}
-div.section.full li {
-	width: 220px;
-	margin-top: 20px;
-	margin-right: 26px;
-}
-div.section.block {
-	width: 220px;
-	height: 185px;
-	background-color: #f6f6f6;
-	text-align: center;
-	float: left;
 
+
+.portfolioEntries {
+	display: inline-block;
 }
 
-div.section.block h5 {
-	margin-top: 15px;
-}
-div.section.block h6 {
-	color: #838282;
-}
 div.section.block img {
-	width: 220px;
-	height: 185px;
-	display: block;
-	position: absolute;
-	margin-top: 0px;
-	margin-left: 0px;
-	z-index: 1;
+	width: 27em;
+	height: 18em;
+	display: inline-block;
+	margin-left:4.5em;
+	
 }
-div.section.block .content {
-	width: 220px;
-	height: 85px;
-	position: absolute;
-	z-index: 5;
-	background-color: #f6f6f6;
-	margin-top: 104px;
-}
-div.section.block .hover {
-	width: 220px;
-	height: 185px;
-	position: relative;
-	z-index: 10;
-	display: none;
-}
-div.section.block .hover.content {
-	width: 220px;
-	height: 182px;
-	position: relative;
-	display: block;
-	background-color: rgba(96, 147, 231, 0.6);
-	z-index: 10;
-	border-bottom: 3px solid #0082A5;
-	margin-top: 0px;
-}
-div.section.block .hover.content h2 {
-	padding-top: 40px;
-	font-size: 40px;
-	font-weight: 400;
-	color: #FFF;
-}
-div.section.block .hover.content h5 {
-	font-weight: 400;
-	color: #FFF;
-}
-div.section.block .hover.content h6 {
-	font-weight: 400;
-	color: #FFF;
-}
-div.section.full li:last-child  {
-	margin-right: 0px;
-}
-div.section.block.blog {
-	text-align: left;
-	height: 220px;
-}
-div.section.block.blog .hover {
-	left: -10px;
-}
-div.section.block.blog img {
-	height: 220px;
-}
-div.section.block h2 {
+.portfolioContent {
+	width: 27em;
+	height: 18em;
+	display: inline-block;
+	margin:0 auto;
 	text-align: center;
-}
-div.section.block.blog h5, div.section.block.blog h6, div.section.block.blog a {
-	margin-left: 20px;
-}
-div.section.block.blog .content h5 {
-	margin-top: 8px;
-}
-div.section.block.blog .content {
-	height: 220px;
-}
-div.section.block.blog .hover {
-	height: 217px;
-}
-a.readmore {
-	display: block;
-	margin-top: 5px;
-}
-div.section.block.blog .hover a.readmore {
-	color: #FFF;
+	background-color: #f6f6f6;
+	margin-left:3em;
+	vertical-align: top;
 }
 
 
 /******************************************************************
 	Portfolio
 ******************************************************************/
-ul.portfoliofilter {
-	width: 100%;
-	text-align: center;
-	margin-bottom: 40px;
-}
-li.filter {
-	font-family: "Open Sans", Verdana, Arial, sans-serif;
-	line-height: 1.6em;
-	color: #454544;
-	background-color: #efefef;
-	text-decoration: none;
-	font-size: 12px;
-	display: inline-block;
-	font-weight: 300;
-	text-transform: uppercase;
-	
-	padding: 5px 15px;
-	border-radius: 3px;
-	margin: 0px 5px;
-}
 
-li.filter.active {
-	font-weight: 700;
-	background-color: #0082A5;
-	color: #FFF;
-	opacity:0.75;
-}
-ul.portfolio li {
-	width: 25%;
-	float: left;
-	display: none;
-	opacity: 0;
-}
-.portfolioitem {
-	display: block;
-	padding-bottom: 85px;
-	position: relative;
-}
-.portfolioitem img {
-	width: 100%;
-	vertical-align: middle;
-}
-
-#allaboard, #bookshelf, #gifhunter, #pantry, #artquiz, #tictac, #publicart{
-	height:375px;
-}
 
 #allaboardTitle{
 	font-weight:400;
 	font-size:12pt;
 }
 
-.openallaboard{
-	width:48%;
+.openDemoButton{
+	width:10em;
 	height:54px;
 	display: inline-block;
 	cursor: pointer;
+	margin:0 auto;
+	color:black;
+	border-radius: 3px;
+	background-color: #f6f6f6;
+
 }
 
-.openallaboard:hover{
+.demoButtonWrapper{
+	text-align: center;
+	margin-left:4em;
+	margin-bottom:20px;
+	vertical-align: center;
+}
+
+.openDemoButton:hover{
 	background-color: #0082A5;
+	color: #616161;
+
 }
 
-.showallaboardsouce:hover{
+.openSourceCodeButton:hover{
 	background-color: #0082A5;
+	color: #616161;
 }
 
-.showallaboardsouce{
-	width:48%;
+.openSourceCodeButton{
+	width:10em;
 	height:54px;
 	display: inline-block;
-	margin-left:2%;
 	cursor: pointer;
+	margin: 0 auto;
+	color:black;
+	border-radius: 3px;
+	background-color: #f6f6f6;
 }
 
 .logos {
@@ -656,17 +545,28 @@ ul.contacts a{
 ******************************************************************/
 @media all and (max-width: 960px) {
 
-	ul#carousellatest{
+	div.section.block img{
+		width:100%;
+		vertical-align: center;
+		margin:0 auto;
+		text-align: center;
+
+	}
+
+	ul.portfolioEntries{
 		width: 100%;
 		margin: 0 auto;
 	}
 
-	div.section.block{
+	.portfolioContent{
 		width:100%;
+		vertical-align: center;
+		margin:0 auto;
+		text-align: center;
 	}
 
-	h2#portfolio{
-		display: none;
+	div.section.block{
+		width:100%;
 	}
 
 	div.section ul{
@@ -675,9 +575,13 @@ ul.contacts a{
 	}
 
 	#portfolioWrapper{
-		width:80%;
+		width:100%;
+		margin:0 auto;
+		text-align: center;
 	}
-
+	.demoButtonWrapper{
+		margin: 0 auto;
+	}
 
 	#emailName, #emailEmail, #emailMessage {
 	width:10em;
@@ -691,16 +595,16 @@ ul.contacts a{
     overflow-x: hidden;
 	}
 
-	blockquote{
+	#blockquote{
 		width:100%;
 	}
 }
 /*menu style*/
 nav.clearfix {
-  height: 40px;
+  height: 60px;
   width: 100%;
-  background: #455868;
-  font-size: 11pt;
+  background: #0082A5;
+  font-size: 14pt;
   font-weight: bold;
   position: relative;
   border-bottom: 2px solid #283744;
@@ -709,11 +613,11 @@ nav.clearfix ul {
   padding: 0;
   margin: 0 auto;
   width: 600px;
-  height: 40px;
+  height: 60px;
 }
 nav.clearfix li {
   display: inline;
-  float: left;
+ 
 }
 .clearfix:before,
 .clearfix:after {
@@ -727,13 +631,15 @@ nav.clearfix li {
     *zoom: 1;
 }
 nav.clearfix a {
+  float:right;
   color: #fff;
   display: inline-block;
   width: 100px;
   text-align: center;
   text-decoration: none;
-  line-height: 40px;
+  line-height: 60px;
   text-shadow: 1px 1px 0px #283744;
+  font-size: 14pt;
 }
 nav.clearfix li a {
   border-right: 1px solid #576979;
@@ -741,8 +647,8 @@ nav.clearfix li a {
   -moz-box-sizing:border-box;
   -webkit-box-sizing:border-box;
 }
-nav.clearfix li:last-child a {
-  border-right: 0;
+nav.clearfix li:first-child a {
+  border-left: 1px solid #576979;
 }
 nav.clearfix a:hover, nav.clearfix a:active {
   background-color: #8c99a4;
@@ -755,17 +661,23 @@ nav.clearfix a#pull {
 @media only screen and (max-width : 480px) {
   nav.clearfix {
     border-bottom: 0;
+    font-size: 10pt;
   }
   nav.clearfix ul {
     display: none;
     height: auto;
+     display: block;
+    background-color: #0082A5;
+    width: 100%;
+    position: relative;
+    left:0;
   }
-  nav.clearfix a#pull {
+  /*nav.clearfix a#pull {
     display: block;
     background-color: #283744;
     width: 100%;
     position: relative;
-  }
+  }*/
   nav.clearfix a#pull:after {
     content:"";
     background: url(../img/nav-icon.png) no-repeat;
@@ -775,6 +687,10 @@ nav.clearfix a#pull {
     position: absolute;
     right: 15px;
     top: 10px;
+  }
+
+  #homeLink, #aboutLink{
+  	display: none;
   }
 
   body > div:nth-child(1) > div.menuHeader > nav > ul{
@@ -819,6 +735,11 @@ input#mailSubmit:hover{
 
 .techUsed{
 	text-decoration: underline;
+	margin-bottom:5px;
+}
+
+.techUsed p {
+	padding:5px;
 }
 
 .menuHeader ul {
@@ -847,3 +768,4 @@ input#mailSubmit:hover{
       display: inline-block;
       color: #fff;
 }
+
