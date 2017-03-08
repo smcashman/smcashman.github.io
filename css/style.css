@@ -45,7 +45,7 @@ html, body {
 }
 
 body{
-	background-color:#e6e6e6;
+	background-color:#E4E9DF;
 }
 
 /******************************************************************
@@ -77,9 +77,18 @@ a {
 	color: #616161;
 }
 
-#contactsection, #skillsection, #projectsection { 
+#contactsection, #skillsection, #projectsection, #footersection { 
 	background-color: #000000;
 	width:100%;
+}
+
+#footersection{
+	margin-bottom:0;
+}
+
+#footersection:hover{
+	cursor:pointer;
+	background-color: #0082A5;
 }
 
 a:hover {
@@ -181,21 +190,25 @@ h6 {
 	margin-right: auto;
 }
 
-#blockquote {
+p#aboutText {
 	font-family: "Open Sans", Verdana, Arial, sans-serif;
 	font-size: 28px;
 	line-height: 60px;
-	width: 100%;
-	background-color: #0082A5;
+	width: 80%;
 	text-align: center;
 	padding-top: 40px;
 	padding-bottom: 10px;
 	color: #ffffff;
 	font-weight: 300;
+	margin-left:5px;
+	margin-right:5px;
+	margin:0 auto;
 }
 
-#blockquote span {
-	padding:15px;
+#blockquote{
+	background-color: #0082A5;
+	width:100%;
+	padding-bottom:50px;
 }
 
 
@@ -232,6 +245,10 @@ div.section.divider {
 	text-align: center;
 	margin-top: 100px;
 	margin-bottom: 40px;
+}
+
+div#projectsection{
+	margin-top:0;
 }
 div.section.divider.single {
 	border-top: 1px solid #0082A5;
@@ -278,7 +295,7 @@ div.icon {
 	width: 100%;
 	height: 100%;
 	background-repeat: no-repeat;
-	background-size:contain;
+	
 }
 .herowrapper {
 	position: absolute;
@@ -469,6 +486,7 @@ div.section.block img {
 	text-align: center;
 	margin-bottom:20px;
 	vertical-align: center;
+	margin-top:5px;
 	
 }
 
@@ -592,6 +610,14 @@ textarea {
 
 ul.contacts a{
 	font-size:36pt;
+}
+
+#topLinked, #topTwitter, #topGit{
+	color:#fff;
+}
+#topLinked:hover, #topTwitter:hover, #topGit:hover{
+	color:#E4E9DF;
+	cursor:pointer;
 }
 
 /******************************************************************

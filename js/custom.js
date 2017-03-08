@@ -101,4 +101,9 @@ $(window).resize(function(){
   }
 }); 
 
+$('#footersection').click(function(){
+	window.scrollTo(0,0);
+})
+
+
 });
