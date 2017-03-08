@@ -423,12 +423,16 @@ div.section.block img {
 
 
 
-#allaboard{
+#allaboard, #bookshelf, #gifhunter, #publicart{
 	border: 3px solid black;
 	text-align: center;
 	width:50%;
 	margin: 0 auto;
 	background-color: #FFF;
+}
+
+#allaboard, #bookshelf, #gifhunter{
+	margin-bottom: 3em;
 }
 
 .openDemoButton{
