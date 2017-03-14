@@ -295,6 +295,7 @@ div.icon {
 	width: 100%;
 	height: 100%;
 	background-repeat: no-repeat;
+	background-size: cover;
 	
 }
 .herowrapper {
@@ -625,13 +626,15 @@ ul.contacts a{
 ******************************************************************/
 @media all and (max-width: 960px) {
 
+	#projectsection{
+	width:700px;
+	}
+
 	div.section.block img{
 		width:100%;
 		vertical-align: center;
 		margin:0 auto;
 		text-align: center;
-
-
 	}
 
 	ul.portfolioEntries{
