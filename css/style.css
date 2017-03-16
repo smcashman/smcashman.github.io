@@ -777,12 +777,7 @@ nav.clearfix a#pull {
     position: relative;
     left:0;
   }
-  /*nav.clearfix a#pull {
-    display: block;
-    background-color: #283744;
-    width: 100%;
-    position: relative;
-  }*/
+  
   nav.clearfix a#pull:after {
     content:"";
     background: url(../img/nav-icon.png) no-repeat;
@@ -804,7 +799,7 @@ nav.clearfix a#pull {
 }
 
 #allaboard, #bookshelf, #gifhunter, #publicart{
-		width:320px;
+		width:320px !important;
 	}
 @media only screen and (max-width : 320px) {
   nav.clearfix li {
@@ -816,7 +811,7 @@ nav.clearfix a#pull {
     border-bottom: 1px solid #576979;
   }
   #allaboard, #bookshelf, #gifhunter, #publicart{
-		width:280px;
+		width:280px !important;
 	}
 }
 
