@@ -295,7 +295,7 @@ div.icon {
 	width: 100%;
 	height: 100%;
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: cover; 
 	
 }
 .herowrapper {
@@ -428,6 +428,12 @@ div.section.block img {
 	border-top: 2px solid #0082A5;
 }
 
+#portfolioWrapper{
+	margin: 0 auto;
+	text-align: center;
+	width:100%;
+}
+
 
 /******************************************************************
 	Portfolio
@@ -444,7 +450,7 @@ div.section.block img {
 #allaboard, #bookshelf, #gifhunter, #publicart{
 	border: 3px solid black;
 	text-align: center;
-	width:50%;
+	width:600px !important;
 	margin: 0 auto;
 	background-color: #FFF;
 }
@@ -626,9 +632,6 @@ ul.contacts a{
 ******************************************************************/
 @media all and (max-width: 960px) {
 
-	#projectsection{
-	width:700px;
-	}
 
 	div.section.block img{
 		width:100%;
@@ -647,6 +650,7 @@ ul.contacts a{
 		vertical-align: center;
 		margin:0 auto;
 		text-align: center;
+		
 	}
 
 	div.section.block{
@@ -662,14 +666,14 @@ ul.contacts a{
 		width:100%;
 		margin:0 auto;
 		text-align: center;
-
 	}
 	.demoButtonWrapper{
 		margin: 0 auto;
 	}
 
 	#emailName, #emailEmail, #emailMessage {
-	width:10em;
+	width:80%;
+	margin:0 auto;
 	}
 
 	.skills img{
@@ -684,6 +688,22 @@ ul.contacts a{
 		width:100%;
 	}
 }
+@media all and (max-width: 790px) {
+	#allaboard, #bookshelf, #gifhunter, #publicart{
+		width:400px;
+	}
+
+}
+
+/*@media all and (max-width: px) {
+	#allaboard, #bookshelf, #gifhunter, #publicart{
+		width:500px;
+	}
+
+}*/
+
+
+
 /*menu style*/
 nav.clearfix {
   height: 60px;
@@ -782,6 +802,10 @@ nav.clearfix a#pull {
   	width:100%;
   }
 }
+
+#allaboard, #bookshelf, #gifhunter, #publicart{
+		width:320px;
+	}
 @media only screen and (max-width : 320px) {
   nav.clearfix li {
     display: block;
@@ -791,6 +815,9 @@ nav.clearfix a#pull {
   nav.clearfix li a {
     border-bottom: 1px solid #576979;
   }
+  #allaboard, #bookshelf, #gifhunter, #publicart{
+		width:280px;
+	}
 }
 
 input#mailSubmit{
