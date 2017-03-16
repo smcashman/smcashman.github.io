@@ -431,7 +431,7 @@ div.section.block img {
 #portfolioWrapper{
 	margin: 0 auto;
 	text-align: center;
-	width:100%;
+	width:600px;
 }
 
 
@@ -450,7 +450,7 @@ div.section.block img {
 #allaboard, #bookshelf, #gifhunter, #publicart{
 	border: 3px solid black;
 	text-align: center;
-	width:600px !important;
+	width:600px;
 	margin: 0 auto;
 	background-color: #FFF;
 }
@@ -695,14 +695,6 @@ ul.contacts a{
 
 }
 
-/*@media all and (max-width: px) {
-	#allaboard, #bookshelf, #gifhunter, #publicart{
-		width:500px;
-	}
-
-}*/
-
-
 
 /*menu style*/
 nav.clearfix {
@@ -796,11 +788,12 @@ nav.clearfix a#pull {
   body > div:nth-child(1) > div.menuHeader > nav > ul{
   	width:100%;
   }
+  #allaboard, #bookshelf, #gifhunter, #publicart{
+		width:320px;
+	}
 }
 
-#allaboard, #bookshelf, #gifhunter, #publicart{
-		width:320px !important;
-	}
+
 @media only screen and (max-width : 320px) {
   nav.clearfix li {
     display: block;
@@ -811,7 +804,7 @@ nav.clearfix a#pull {
     border-bottom: 1px solid #576979;
   }
   #allaboard, #bookshelf, #gifhunter, #publicart{
-		width:280px !important;
+		width:280px;
 	}
 }
 
