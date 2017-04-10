@@ -21,6 +21,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 body {
 	line-height: 1;
+	width: 100%;
 }
 ol, ul {
 	list-style: none;
@@ -183,12 +184,7 @@ h6 {
 /******************************************************************
 	Main
 ******************************************************************/
-.content {
-	max-width: 100%;
-	width: 80%;
-	margin-left: auto;
-	margin-right: auto;
-}
+
 
 p#aboutText {
 	font-family: "Open Sans", Verdana, Arial, sans-serif;
@@ -206,7 +202,7 @@ p#aboutText {
 }
 
 #blockquote{
-	background-color: #0082A5;
+	background-color: #243B57;
 	width:100%;
 	padding-bottom:50px;
 }
@@ -241,7 +237,7 @@ p.main {
 div.section.divider {
 	width: 100%;
 	height: 40px;
-	border-top: 1px solid #0082A5;
+	border-top: 1px solid #000;
 	text-align: center;
 	margin-top: 100px;
 	margin-bottom: 40px;
@@ -256,8 +252,8 @@ div.section.divider.single {
 }
 div.section.divider h2 {
 	font-weight: 400;
-	color: #0082A5;
-	background-color: #FFF;
+	color: #fff;
+	background-color: #000;
 	margin-top: -20px;
 	width: 300px;
 	margin-left: auto;
@@ -290,20 +286,21 @@ div.icon {
 	background-size: cover;
 }
 .overlay {
-	background-image: url(../img/pexels-photo.jpg);
+	background-image: url(../img/Panoramic_Boston.jpg);
 	position: absolute;
 	width: 100%;
 	height: 100%;
 	background-repeat: no-repeat;
 	background-size: cover; 
+	opacity: .55;
 	
 }
 .herowrapper {
 	position: absolute;
 	top: 50%;
 	height: 40px;
-	margin-top: -40px;
 	width: 100%;
+	margin-top: 20px;
 }
 .herowrapper h1 {
 	text-align: center;
@@ -411,27 +408,44 @@ footer.main h6.copyright {
 div.section.block img {
 	width: 100%;
 	height: 18em;
-	display: block;
+	/*display: block;*/
 	margin:0 auto;
 	/*border: 2px solid #0082A5;*/
-	
+}
+
+div.section.block {
+	display: inline-block;
 }
 .portfolioContent {
 	width: 100%;
 	height: 18em;
-	display: block;
+	/*display: block;*/
 	margin:0 auto;
-	text-align: center;
+	text-align: left;
 	background-color: #ffffff;
 	/*margin-left:3em;*/
 	vertical-align: top;
-	border-top: 2px solid #0082A5;
+	border-top: 2px solid #243B57;
+}
+.portfolioContent:hover{
+	background-color: #e3eaee;
+}
+.portfolioContent h6 {
+	padding-left: 5px;
+}
+
+
+.portfolioContent p {
+	padding-left:5px;
 }
 
 #portfolioWrapper{
+	width:100%;
+}
+
+.portfolioItem {
+	display: inline-block;
 	margin: 0 auto;
-	text-align: center;
-	width:600px;
 }
 
 
@@ -450,24 +464,43 @@ div.section.block img {
 #allaboard, #bookshelf, #gifhunter, #publicart{
 	border: 3px solid black;
 	text-align: center;
-	width:600px;
-	margin: 0 auto;
+	width:40%;
 	background-color: #FFF;
+	
 }
 
-#allaboard, #bookshelf, #gifhunter{
+#allaboard, #gifhunter{
+	margin-left:120px;
+}
+
+#allaboard:hover, #bookshelf:hover, #gifhunter:hover, #publicart:hover{
+	background-color: #e3eaee
+}
+
+/*#allaboard, #bookshelf, #gifhunter{
 	margin-bottom: 3em;
+}*/
+
+#bookshelf {
+	vertical-align: top;
+}
+
+#gifhunter{
+	vertical-align: top;
+}
+
+#gifhunter, #publicart{
+	margin-top: 20px;
 }
 
 .openDemoButton{
 	width:10em;
-	height:54px;
 	display: inline-block;
 	cursor: pointer;
 	margin:0 auto;
 	color:black;
 	border-radius: 3px;
-	background-color: #ffffff;
+	background-color: #243B57;
 	text-rendering: auto;
     letter-spacing: normal;
     word-spacing: normal;
@@ -475,10 +508,10 @@ div.section.block img {
     text-indent: 0px;
     text-shadow: none;
     font: 11px BlinkMacSystemFont;
-        align-items: flex-start;
+    color:#fff;
     text-align: center;
     box-sizing: border-box;
-    padding: 2px 6px 3px;
+    padding: 6px 6px 6px;
     border-width: 2px;
     border-style: outset;
     border-color: buttonface;
@@ -498,25 +531,23 @@ div.section.block img {
 }
 
 .openDemoButton:hover{
-	background-color: #0082A5;
-	color: #616161;
+	background-color: #000;
 
 }
 
 .openSourceCodeButton:hover{
-	background-color: #0082A5;
-	color: #616161;
+	background-color: #000;
+
 }
 
 .openSourceCodeButton{
 	width:10em;
-	height:54px;
 	display: inline-block;
 	cursor: pointer;
 	margin: 0 auto;
 	color:black;
 	border-radius: 3px;
-	background-color: #ffffff;
+	background-color: #A0A0A0;
 	text-rendering: auto;
     letter-spacing: normal;
     word-spacing: normal;
@@ -528,7 +559,7 @@ div.section.block img {
         align-items: flex-start;
     text-align: center;
     box-sizing: border-box;
-    padding: 2px 6px 3px;
+    padding: 6px 6px 6px;
     border-width: 2px;
     border-style: outset;
     border-color: buttonface;
@@ -556,6 +587,18 @@ div.section.block img {
 	z-index: 5;
 	opacity: 1;
 }
+
+
+.skills{
+	text-align: center;
+}
+
+.skills img{
+	height:100px;
+	padding:10px;
+	padding:5px;
+}
+
 
 /******************************************************************
 	Contact
@@ -588,7 +631,7 @@ textarea {
 	outline: none;
 	border-radius: 3px;
 	margin-bottom: 20px;
-	text-align: center;
+	text-align: left;
 	/*margin-left:50px;*/
 }
 
@@ -676,10 +719,6 @@ ul.contacts a{
 	margin:0 auto;
 	}
 
-	.skills img{
-		padding:5px;
-	}
-
 	body {
     overflow-x: hidden;
 	}
@@ -698,19 +737,21 @@ ul.contacts a{
 
 /*menu style*/
 nav.clearfix {
-  height: 60px;
+  height: 40px;
   width: 100%;
-  background: #0082A5;
+  background: rgba(0, 0, 0, 0.75);
   font-size: 14pt;
   font-weight: bold;
   position: relative;
-  border-bottom: 2px solid #283744;
+  border-bottom: 1px solid #333;
+  margin-bottom: -40px;
+  z-index: 1;
 }
 nav.clearfix ul {
   padding: 0;
   margin: 0 auto;
-  width: 600px;
-  height: 60px;
+  width: 550px;
+  height: 40px;
 }
 nav.clearfix li {
   display: inline;
@@ -734,7 +775,7 @@ nav.clearfix a {
   width: 100px;
   text-align: center;
   text-decoration: none;
-  line-height: 60px;
+  line-height: 40px;
   text-shadow: 1px 1px 0px #283744;
   font-size: 14pt;
 }
@@ -745,7 +786,7 @@ nav.clearfix li a {
   -webkit-box-sizing:border-box;
 }
 nav.clearfix li:first-child a {
-  border-left: 1px solid #576979;
+  border-left: 1px solid #333;
 }
 nav.clearfix a:hover, nav.clearfix a:active {
   background-color: #8c99a4;
@@ -764,7 +805,7 @@ nav.clearfix a#pull {
     display: none;
     height: auto;
      display: block;
-    background-color: #0082A5;
+    background: rgba(0, 0, 0, 0.75);
     width: 100%;
     position: relative;
     left:0;
@@ -818,17 +859,9 @@ input#mailSubmit:hover{
 	background-color: #0082A5;
 }
 
-.skills{
-	text-align: center;
-}
-
-.skills img{
-	height:150px;
-	padding:10px;
-}
 
 .projectTitle {
-	color: #0082A5;
+	color: #243B57;
 	font-weight: bold;
 	font-size: 20pt;
 }
