@@ -744,7 +744,7 @@ nav.clearfix {
   background: rgba(0, 0, 0, 0.75);
   font-size: 14pt;
   font-weight: bold;
-  position: relative;
+  position: fixed;
   border-bottom: 1px solid #333;
   margin-bottom: -40px;
   z-index: 1;
