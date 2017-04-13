@@ -89,11 +89,11 @@ a {
 
 #footersection:hover{
 	cursor:pointer;
-	background-color: #0082A5;
+	background-color: #243B57;
 }
 
 a:hover {
-	color: #0082A5;
+	color: #243B57;
 }
 b {
 	font-weight: bold;
@@ -427,9 +427,9 @@ div.section.block {
 	vertical-align: top;
 	border-top: 2px solid #243B57;
 }
-.portfolioContent:hover{
+/*.portfolioContent:hover{
 	background-color: #e3eaee;
-}
+}*/
 .portfolioContent h6 {
 	padding-left: 5px;
 }
@@ -473,9 +473,9 @@ div.section.block {
 	margin-left:120px;
 }
 
-#allaboard:hover, #bookshelf:hover, #gifhunter:hover, #publicart:hover{
+/*#allaboard:hover, #bookshelf:hover, #gifhunter:hover, #publicart:hover{
 	background-color: #e3eaee
-}
+}*/
 
 /*#allaboard, #bookshelf, #gifhunter{
 	margin-bottom: 3em;
@@ -499,7 +499,7 @@ div.section.block {
 	cursor: pointer;
 	margin:0 auto;
 	color:black;
-	border-radius: 3px;
+	/*border-radius: 3px;*/
 	background-color: #243B57;
 	text-rendering: auto;
     letter-spacing: normal;
@@ -507,14 +507,14 @@ div.section.block {
     text-transform: none;
     text-indent: 0px;
     text-shadow: none;
-    font: 11px BlinkMacSystemFont;
+    font: 11px "Open Sans";
     color:#fff;
     text-align: center;
     box-sizing: border-box;
     padding: 6px 6px 6px;
     border-width: 2px;
-    border-style: outset;
-    border-color: buttonface;
+    /*border-style: outset;
+    border-color: buttonface;*/
     border-image: initial;
     vertical-align: middle;
     -webkit-writing-mode: horizontal-tb;
@@ -523,21 +523,23 @@ div.section.block {
 }
 
 .demoButtonWrapper{
-	text-align: center;
+	text-align: left;
 	margin-bottom:20px;
 	vertical-align: center;
 	margin-top:5px;
-	
+	padding-left:5px;
+
 }
 
 .openDemoButton:hover{
-	background-color: #000;
+	background-color: #3f6289;
+	color:white;
 
 }
 
 .openSourceCodeButton:hover{
-	background-color: #000;
-
+	background-color: #dae1e5;
+	color:black;
 }
 
 .openSourceCodeButton{
@@ -546,7 +548,7 @@ div.section.block {
 	cursor: pointer;
 	margin: 0 auto;
 	color:black;
-	border-radius: 3px;
+	/*border-radius: 3px;*/
 	background-color: #A0A0A0;
 	text-rendering: auto;
     letter-spacing: normal;
@@ -555,14 +557,13 @@ div.section.block {
     text-indent: 0px;
     text-shadow: none;
     text-align: start;
-    font: 11px BlinkMacSystemFont;
-        align-items: flex-start;
+    font: 11px "Open Sans";
     text-align: center;
     box-sizing: border-box;
     padding: 6px 6px 6px;
     border-width: 2px;
-    border-style: outset;
-    border-color: buttonface;
+    /*border-style: outset;
+    border-color: buttonface;*/
     border-image: initial;
     vertical-align: middle;
     -webkit-writing-mode: horizontal-tb;
@@ -632,6 +633,7 @@ textarea {
 	border-radius: 3px;
 	margin-bottom: 20px;
 	text-align: left;
+	font-family: "Open Sans";
 	/*margin-left:50px;*/
 }
 
@@ -666,7 +668,7 @@ ul.contacts a{
 	color:#fff;
 }
 #topLinked:hover, #topTwitter:hover, #topGit:hover{
-	color:#E4E9DF;
+	color:#243B57;
 	cursor:pointer;
 }
 
@@ -850,13 +852,33 @@ nav.clearfix a#pull {
 }
 
 input#mailSubmit{
-	width:100px;
-	height:54px;
+	height: ;
+	width:10em;
+	display: inline-block;
 	cursor: pointer;
+	margin: 0 auto;
+	color:white;
+	background-color: #243B57;
+	text-rendering: auto;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    text-align: start;
+    font: 12pt "Open Sans";
+    text-align: center;
+    box-sizing: border-box;
+    border-image: initial;
+    vertical-align: middle;
+    -webkit-writing-mode: horizontal-tb;
+    line-height: 40px;
 }
 
-input#mailSubmit:hover{
-	background-color: #0082A5;
+
+
+#mailSubmit:hover{
+	background-color: #3f6289;
 }
 
 
