@@ -46,7 +46,7 @@ html, body {
 }
 
 body{
-	background-color:#E4E9DF;
+	background-color:#D9D9D9;
 }
 
 /******************************************************************
@@ -78,18 +78,18 @@ a {
 	color: #616161;
 }
 
-#contactsection, #skillsection, #projectsection, #footersection { 
+/*#contactsection, #skillsection, #projectsection, #footersection { 
 	background-color: #000000;
 	width:100%;
-}
+}*/
+
 
 #footersection{
 	margin-bottom:0;
 }
 
-#footersection:hover{
+#footertitle:hover{
 	cursor:pointer;
-	background-color: #243B57;
 }
 
 a:hover {
@@ -202,7 +202,7 @@ p#aboutText {
 }
 
 #blockquote{
-	background-color: #243B57;
+	background-color: #284B63;
 	width:100%;
 	padding-bottom:50px;
 }
@@ -234,14 +234,14 @@ p.main {
 	margin: 50px auto;
 	font-weight: 400;
 }
-div.section.divider {
+/*div.section.divider {
 	width: 100%;
 	height: 40px;
 	border-top: 1px solid #000;
 	text-align: center;
 	margin-top: 100px;
 	margin-bottom: 40px;
-}
+}*/
 
 div#projectsection{
 	margin-top:0;
@@ -260,6 +260,7 @@ div.section.divider h2 {
 	margin-right: auto;
 	font-size: 24px;
 	text-transform: uppercase;
+	text-align: center;
 }
 a.scroll {
 	width: 100%;
@@ -305,7 +306,7 @@ div.icon {
 .herowrapper h1 {
 	text-align: center;
 	color: #FFF;
-	font-size: 40px;
+	font-size: 60px;
 	font-weight: 300;
 }
 .herowrapper h2{
@@ -464,12 +465,20 @@ div.section.block {
 
 
 #allaboard, #bookshelf, #gifhunter, #publicart{
-	border: 3px solid black;
+	/*border: 3px solid black;*/
 	text-align: center;
 	margin: 0 auto;
 	width:40%;
 	background-color: #FFF;
-	
+	box-shadow: 10px 10px 5px #888888;
+}
+
+#publicart{
+	margin-bottom:50px;
+}
+
+#allaboard{
+	margin-top: 50px;
 }
 
 
@@ -500,7 +509,7 @@ div.section.block {
 	margin:0 auto;
 	color:black;
 	/*border-radius: 3px;*/
-	background-color: #243B57;
+	background-color: #284B63;
 	text-rendering: auto;
     letter-spacing: normal;
     word-spacing: normal;
@@ -592,12 +601,16 @@ div.section.block {
 
 .skills{
 	text-align: center;
+	background-color: #3C6E71;
+	padding-top:20px;
+	padding-bottom:20px;
 }
 
 .skills img{
 	height:100px;
 	padding:10px;
 	padding:5px;
+	filter: grayscale(100%);
 }
 
 
@@ -610,13 +623,14 @@ div.section.block {
 	line-height: 1.6em;
 	color: #848484;
 	font-size: 16px;
+	background-color: #353535;
 }
 input {
 	line-height: 50px;
 	font-size: 18px;
 	width: 500px;
 	height: 50px;
-	border: 1px solid #0082A5;
+	/*border: 1px solid #0082A5;*/
 	outline: none;
 	border-radius: 3px;
 	margin-bottom: 20px;
@@ -631,7 +645,7 @@ textarea {
 	border: 1px solid #0082A5;
 	outline: none;
 	border-radius: 3px;
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 	text-align: left;
 	font-family: "Open Sans";
 	/*margin-left:50px;*/
@@ -640,15 +654,27 @@ textarea {
 /******************************************************************
 	Footer
 ******************************************************************/
+#contacttitle{
+	text-align: center;
+	padding-top:50px;
+	font-size: 36pt;
+	color:white;
+}
+
 
 .contacts {
 	text-align: center;
 	margin: 0 auto;
-	padding-left:0;
-
-		
+	padding-left:0;	
 }
 
+.fa-linkedin:hover, .fa-github:hover, .fa-twitter:hover{
+	color:#616161;
+}
+
+.fa-linkedin:before, .fa-github:before, .fa-twitter:before{
+	color:white;
+}
 .linkedin, .twitter, .github {
 	display: inline-block;
 	height:1.5rem;
@@ -656,8 +682,7 @@ textarea {
 	padding: 1rem .5rem;
 	margin: 1.25rem 5px;
 	margin-top:0;
-	margin-bottom:2em;
-	
+	margin-bottom:2em;	
 }
 
 ul.contacts a{
@@ -858,7 +883,7 @@ input#mailSubmit{
 	cursor: pointer;
 	margin: 0 auto;
 	color:white;
-	background-color: #243B57;
+	background-color: #3C6E71;
 	text-rendering: auto;
     letter-spacing: normal;
     word-spacing: normal;
@@ -873,12 +898,13 @@ input#mailSubmit{
     vertical-align: middle;
     -webkit-writing-mode: horizontal-tb;
     line-height: 40px;
+    margin-bottom:30px;
 }
 
 
 
 #mailSubmit:hover{
-	background-color: #3f6289;
+	background-color: #4A6E71;
 }
 
 
@@ -888,8 +914,12 @@ input#mailSubmit{
 	font-size: 20pt;
 }
 
+#projectheader{
+	text-align: center;
+}
+
 .techUsed{
-	text-decoration: underline;
+	
 	margin-bottom:5px;
 	font-size: 16pt;
 }
