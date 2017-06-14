@@ -15,6 +15,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+
 }
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 	display: block;
@@ -22,6 +23,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 body {
 	line-height: 1;
 	width: 100%;
+	overflow-x:hidden;3
 }
 ol, ul {
 	list-style: none;
@@ -46,7 +48,7 @@ html, body {
 }
 
 body{
-	background-color:#D9D9D9;
+	background-color:#ffffff;
 }
 
 /******************************************************************
@@ -413,6 +415,8 @@ div.section.block img {
 	margin:0 auto;
 	overflow: hidden;
 	/*border: 2px solid #0082A5;*/
+	margin-right:5em;
+	margin-top:20px;
 }
 
 div.section.block {
@@ -424,14 +428,19 @@ div.section.block {
 	/*display: block;*/
 	margin:0 auto;
 	text-align: left;
-	background-color: #ffffff;
+	/*background-color: #ffffff;*/
 	/*margin-left:3em;*/
 	vertical-align: top;
-	border-top: 2px solid #243B57;
+	margin-left:5em;
 }
-/*.portfolioContent:hover{
-	background-color: #e3eaee;
-}*/
+
+.portfolioContent p{
+	font-size:16pt;
+	padding:5px;
+	margin-bottom:10px;
+	width:40%;
+}
+
 .portfolioContent h6 {
 	padding-left: 5px;
 }
@@ -462,15 +471,26 @@ div.section.block {
 	font-size:12pt;
 }
 
+.portfolioImage{
+	display:inline-block;
+	float:right;
+	right:0;
+	width:40%;
+	box-shadow: 10px 10px 5px #888888;
+	margin-top:20px;
+}
+
+#topImage{
+	margin-bottom:-20px;
+}
 
 
 #allaboard, #bookshelf, #gifhunter, #publicart{
 	/*border: 3px solid black;*/
 	text-align: center;
 	margin: 0 auto;
-	width:40%;
-	background-color: #FFF;
-	box-shadow: 10px 10px 5px #888888;
+	/*background-color: #FFF;*/
+	/*box-shadow: 10px 10px 5px #888888;*/
 }
 
 #publicart{
@@ -479,6 +499,11 @@ div.section.block {
 
 #allaboard{
 	margin-top: 50px;
+}
+
+div.section.block img{
+	width:40%;
+	float:right;
 }
 
 
@@ -610,6 +635,7 @@ div.section.block {
 	height:100px;
 	padding:10px;
 	padding:5px;
+	-webkit-filter: invert(100%);
 	filter: grayscale(100%);
 }
 
@@ -700,7 +726,7 @@ ul.contacts a{
 /******************************************************************
 	Mobile
 ******************************************************************/
-@media all and (max-width: 960px) {
+@media all and (max-width: 900px) {
 
 
 	div.section.block img{
@@ -754,9 +780,17 @@ ul.contacts a{
 		width:100%;
 	}
 }
-@media all and (max-width: 790px) {
+@media all and (max-width: 899px) {
 	#allaboard, #bookshelf, #gifhunter, #publicart{
 		width:400px;
+	}
+	.portfolioContent p{
+		width:100%;
+	}
+
+	.portfolioEntries{
+		text-align: center;
+		margin:0 auto;
 	}
 
 }
@@ -912,6 +946,9 @@ input#mailSubmit{
 	color: #243B57;
 	font-weight: bold;
 	font-size: 20pt;
+	text-align: left;
+	margin-left:3.25em;
+	margin-top:25px;
 }
 
 #projectheader{
