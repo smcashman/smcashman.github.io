@@ -415,7 +415,7 @@ div.section.block img {
 	margin:0 auto;
 	overflow: hidden;
 	/*border: 2px solid #0082A5;*/
-	margin-right:5em;
+	/*margin-right:5em;*/
 	margin-top:20px;
 }
 
@@ -431,7 +431,7 @@ div.section.block {
 	/*background-color: #ffffff;*/
 	/*margin-left:3em;*/
 	vertical-align: top;
-	margin-left:5em;
+	/*margin-left:5em;*/
 }
 
 .portfolioContent p{
@@ -473,28 +473,109 @@ div.section.block {
 
 .portfolioImage{
 	display:inline-block;
-	float:right;
 	right:0;
 	width:40%;
 	box-shadow: 10px 10px 5px #888888;
 	margin-top:20px;
 }
 
-#topImage{
-	margin-bottom:-20px;
+#topImage, #gifhunterimage {
+	float:right;
+	margin-right:5em;
 }
 
+#topImage{
+	margin-top:50px;
+}
+
+#bookshelfimage, #publicartimage{
+	float:left;
+	left: 0;
+	margin-top:10em;
+	margin-left:5em;
+}
+
+#allaboardContent, #gifhunterContent{
+	margin-left:5em;
+}
+
+#bookshelfDescription, #bookshelfparagraph, #BookshelfTitle, #bookshelfDemoButton, #bookshelfTech, #artTitle, #artTechUsed, #artparagraph{
+	float:right;
+	padding:5px;
+}
+
+#BookshelfTitle{
+	margin-right:17em;
+	margin-left: 0;
+}
+
+#bookshelfTech{
+	margin-right:15em;
+}
+
+#bookshelfDescription{
+	margin-right: 5em;
+	text-align: left;
+}
+
+#bookshelfparagraph{
+	margin-top:-12em;
+	margin-bottom: 0;
+}
+
+#BookshelfTitle {
+	 margin-top:4em;
+}
+
+#bookshelfTech{
+	margin-top:-14em;
+}
+
+#bookshelfDemoButton, #artbuttonwrapper{
+	right:0;
+	margin-right:17.5em;
+	clear:both;
+
+}
+
+#giftitle{
+	margin-top:-5em;
+	margin-bottom:5px;
+}
+
+#gifhunterimage{
+	margin-top:-8em;
+}
+
+#artTitle{
+	margin-right:17.25em;
+	clear:both;
+	margin-top:5em;
+	margin-left: 0;
+}
+
+#artbuttonwrapper{
+	float:right;
+	margin-right:23em;
+}
+
+#artTechUsed{
+	margin-right:13em;
+	margin-left: 0;
+}
 
 #allaboard, #bookshelf, #gifhunter, #publicart{
-	/*border: 3px solid black;*/
 	text-align: center;
 	margin: 0 auto;
-	/*background-color: #FFF;*/
-	/*box-shadow: 10px 10px 5px #888888;*/
 }
 
 #publicart{
-	margin-bottom:50px;
+	margin-bottom:10em;
+}
+
+#artparagraph{
+	margin-left:0;
+	margin-right:3.75em;
 }
 
 #allaboard{
@@ -503,13 +584,8 @@ div.section.block {
 
 div.section.block img{
 	width:40%;
-	float:right;
 }
 
-
-/*#allaboard:hover, #bookshelf:hover, #gifhunter:hover, #publicart:hover{
-	background-color: #e3eaee
-}*/
 
 #allaboard, #bookshelf, #gifhunter{
 	margin-bottom: 3em;
@@ -626,7 +702,7 @@ div.section.block img{
 
 .skills{
 	text-align: center;
-	background-color: #3C6E71;
+	background-color: #a7aaaa;
 	padding-top:20px;
 	padding-bottom:20px;
 }
@@ -635,8 +711,6 @@ div.section.block img{
 	height:100px;
 	padding:10px;
 	padding:5px;
-	-webkit-filter: invert(100%);
-	filter: grayscale(100%);
 }
 
 
@@ -726,9 +800,67 @@ ul.contacts a{
 /******************************************************************
 	Mobile
 ******************************************************************/
+
+@media all and (max-width: 1200px){
+	#BookshelfTitle{
+		margin-right:11.5em;
+		margin-top:0;
+	}
+	#bookshelfparagraph{
+		margin-right:0;
+		margin-left: 5em;
+	}
+
+	#bookshelfimage{
+		margin-left:3em;
+	}
+
+	#bookshelfTech{
+		margin-right:8em;
+	}
+	#bookshelfDemoButton{
+		margin-right:8em;
+	}
+	#bookshelf{
+		margin-top: 8em;
+	}
+	#gifhunter{
+		margin-top:10em;
+	}
+	#artTitle{
+		margin-right: 9em;
+	}
+	#artTechUsed{
+		margin-right: 3em;
+	}
+	#artparagraph{
+		margin-right:1em;
+	}
+	#artbuttonwrapper{
+		margin-right:10em;
+	}
+}
 @media all and (max-width: 900px) {
 
+	#topImage, #bookshelfimage, #gifhunterimage, #publicartimage, #artTechUsed {
+		margin:0 auto;
+	}
+	#bookshelfparagraph{
+		margin:0 auto;
+		width:100%;
+	}
 
+	#BookshelfTitle{
+		margin-top:0;
+	}
+
+	#gifhunterContent{
+		margin-top:25px;
+	}
+
+	#bookshelfDemoButton, #artbuttonwrapper {
+		margin:0 auto;
+	}
 	div.section.block img{
 		width:100%;
 		vertical-align: center;
@@ -917,7 +1049,7 @@ input#mailSubmit{
 	cursor: pointer;
 	margin: 0 auto;
 	color:white;
-	background-color: #3C6E71;
+	background-color: #3F6289;
 	text-rendering: auto;
     letter-spacing: normal;
     word-spacing: normal;
