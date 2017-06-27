@@ -495,6 +495,19 @@ div.section.block {
 	margin-left:5em;
 }
 
+#projectheader{
+	text-align: center;
+}
+
+.techUsed{
+	margin-bottom:5px;
+	font-size: 16pt;
+}
+
+.portfolioContent p{
+	color: black;
+	line-height: 2.0;
+}
 #allaboardContent, #gifhunterContent{
 	margin-left:5em;
 }
@@ -586,6 +599,14 @@ div.section.block img{
 	width:40%;
 }
 
+.projectTitle {
+	color: #243B57;
+	font-weight: bold;
+	font-size: 20pt;
+	text-align: left;
+	margin-left:3.25em;
+	margin-top:25px;
+}
 
 #allaboard, #bookshelf, #gifhunter{
 	margin-bottom: 3em;
@@ -842,6 +863,10 @@ ul.contacts a{
 }
 @media all and (max-width: 900px) {
 
+	#portfolioWrapper{
+		width:100%;
+	}
+
 	#topImage, #bookshelfimage, #gifhunterimage, #publicartimage, #artTechUsed {
 		margin:0 auto;
 	}
@@ -851,12 +876,59 @@ ul.contacts a{
 	}
 
 	#BookshelfTitle{
+		margin:0 auto;
 		margin-top:0;
+		float:none;
+
 	}
 
+	#allaboardp{
+		margin:0 auto;
+		margin-right:20px;
+	}
+
+	#allaboardContent{
+		float:none;
+	}
+
+	#bookshelfTech{
+		margin:0 auto;
+
+	}
+	#giftitle{
+		margin-top:20px;
+	}
 	#gifhunterContent{
 		margin-top:25px;
 	}
+
+	#gifhunterimage{
+		margin-bottom: 20px
+	}
+
+
+	#artTitle{
+		margin:0 auto;
+		float:none;
+	}
+
+	#artbuttonwrapper{
+		float:none;
+		margin:0 auto;
+	}
+
+	#artparagraph{
+		margin:0 auto;
+	}
+
+	#artTechUsed{
+		float:none;
+	}
+
+	#publicartimage{
+		margin-bottom:20px;
+	}
+
 
 	#bookshelfDemoButton, #artbuttonwrapper {
 		margin:0 auto;
@@ -865,6 +937,11 @@ ul.contacts a{
 		width:100%;
 		vertical-align: center;
 		margin:0 auto;
+		text-align: center;
+	}
+
+	.projectTitle{
+		margin-left:0;
 		text-align: center;
 	}
 
@@ -1071,35 +1148,6 @@ input#mailSubmit{
 
 #mailSubmit:hover{
 	background-color: #4A6E71;
-}
-
-
-.projectTitle {
-	color: #243B57;
-	font-weight: bold;
-	font-size: 20pt;
-	text-align: left;
-	margin-left:3.25em;
-	margin-top:25px;
-}
-
-#projectheader{
-	text-align: center;
-}
-
-.techUsed{
-	
-	margin-bottom:5px;
-	font-size: 16pt;
-}
-
-.techUsed p {
-	padding:5px;
-}
-
-.portfolioContent p{
-	color: black;
-	line-height: 2.0;
 }
 
 .menuHeader ul {
