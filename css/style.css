@@ -23,7 +23,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 body {
 	line-height: 1;
 	width: 100%;
-	overflow-x:hidden;3
+	overflow-x:hidden;
 }
 ol, ul {
 	list-style: none;
@@ -41,7 +41,6 @@ table {
 	border-spacing: 0;
 }
 html, body {
-	width: 100%;
 	height: 100%;
 	letter-spacing: 0.025em;
 	-webkit-font-smoothing: subpixel-antialiased;
@@ -183,6 +182,96 @@ h6 {
 	color: #cfcfcf;
 }
 
+/******************************************************************
+	Menu
+******************************************************************/
+
+.menuHeader ul {
+      padding:0;
+      margin:0;
+  }
+.menuHeader li {
+        display: inline-block;
+        float: left;
+        list-style: none;
+        padding: 0 0 0 5px;
+        margin: 0;
+      }
+
+.menuIcon {
+    display: none;
+    background: #000;
+    width: 100%;
+    text-align: center;
+}
+.menuIcon:hover {
+      background: #999;
+    }
+.menuIcon a {
+	width: 100%;
+      display: inline-block;
+      color: #fff;
+}
+
+/*menu style*/
+nav.clearfix {
+  height: 40px;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.75);
+  font-size: 14pt;
+  font-weight: bold;
+  position: fixed;
+  border-bottom: 1px solid #333;
+  margin-bottom: -40px;
+  z-index: 1;
+}
+nav.clearfix ul {
+  padding: 0;
+  margin: 0 auto;
+  width: 550px;
+  height: 40px;
+}
+nav.clearfix li {
+  display: inline;
+ 
+}
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    *zoom: 1;
+}
+nav.clearfix a {
+  float:right;
+  color: #fff;
+  display: inline-block;
+  width: 100px;
+  text-align: center;
+  text-decoration: none;
+  line-height: 40px;
+  text-shadow: 1px 1px 0px #283744;
+  font-size: 14pt;
+}
+nav.clearfix li a {
+  border-right: 1px solid #576979;
+  box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+}
+nav.clearfix li:first-child a {
+  border-left: 1px solid #333;
+}
+nav.clearfix a:hover, nav.clearfix a:active {
+  background-color: #8c99a4;
+}
+nav.clearfix a#pull {
+  display: none;
+}  
 /******************************************************************
 	Main
 ******************************************************************/
@@ -411,11 +500,8 @@ footer.main h6.copyright {
 div.section.block img {
 	max-width: 100%;
 	height: auto;
-	/*display: block;*/
 	margin:0 auto;
 	overflow: hidden;
-	/*border: 2px solid #0082A5;*/
-	/*margin-right:5em;*/
 	margin-top:20px;
 }
 
@@ -425,13 +511,9 @@ div.section.block {
 .portfolioContent {
 	width: 100%;
 	height: 18em;
-	/*display: block;*/
 	margin:0 auto;
 	text-align: left;
-	/*background-color: #ffffff;*/
-	/*margin-left:3em;*/
 	vertical-align: top;
-	/*margin-left:5em;*/
 }
 
 .portfolioContent p{
@@ -514,7 +596,7 @@ div.section.block {
 
 #bookshelfDescription, #bookshelfparagraph, #BookshelfTitle, #bookshelfDemoButton, #bookshelfTech, #artTitle, #artTechUsed, #artparagraph{
 	float:right;
-	padding:5px;
+	/*padding:5px;*/
 }
 
 #BookshelfTitle{
@@ -863,6 +945,10 @@ ul.contacts a{
 }
 @media all and (max-width: 900px) {
 
+	body{
+		overflow-x: hidden;
+	}
+
 	#portfolioWrapper{
 		width:100%;
 	}
@@ -887,19 +973,34 @@ ul.contacts a{
 		margin-right:20px;
 	}
 
+	#allaboardWrapper{
+		text-align: center;
+	}
+
 	#allaboardContent{
 		float:none;
+		width:80%;
+		margin:0 auto;
 	}
 
 	#bookshelfTech{
 		margin:0 auto;
+		text-align: center;
+		margin-right:2.5em;
 
 	}
+	#bookshelfDescription{
+		width:80%;
+		margin:0 auto;
+		margin-bottom:30px;
+	}
 	#giftitle{
-		margin-top:20px;
+		margin-top:8em;
 	}
 	#gifhunterContent{
-		margin-top:25px;
+		width:80%;
+		margin:0 auto;
+		margin-top:20px;
 	}
 
 	#gifhunterimage{
@@ -914,6 +1015,7 @@ ul.contacts a{
 
 	#artbuttonwrapper{
 		float:none;
+		text-align: center;
 		margin:0 auto;
 	}
 
@@ -930,9 +1032,13 @@ ul.contacts a{
 	}
 
 
-	#bookshelfDemoButton, #artbuttonwrapper {
+	#bookshelfDemoButton {
 		margin:0 auto;
+		text-align: center;
+		margin-bottom:20px;
+		margin-right:25px;
 	}
+
 	div.section.block img{
 		width:100%;
 		vertical-align: center;
@@ -974,6 +1080,7 @@ ul.contacts a{
 	}
 	.demoButtonWrapper{
 		margin: 0 auto;
+		text-align: center
 	}
 
 	#emailName, #emailEmail, #emailMessage {
@@ -1005,65 +1112,7 @@ ul.contacts a{
 }
 
 
-/*menu style*/
-nav.clearfix {
-  height: 40px;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.75);
-  font-size: 14pt;
-  font-weight: bold;
-  position: fixed;
-  border-bottom: 1px solid #333;
-  margin-bottom: -40px;
-  z-index: 1;
-}
-nav.clearfix ul {
-  padding: 0;
-  margin: 0 auto;
-  width: 550px;
-  height: 40px;
-}
-nav.clearfix li {
-  display: inline;
- 
-}
-.clearfix:before,
-.clearfix:after {
-    content: " ";
-    display: table;
-}
-.clearfix:after {
-    clear: both;
-}
-.clearfix {
-    *zoom: 1;
-}
-nav.clearfix a {
-  float:right;
-  color: #fff;
-  display: inline-block;
-  width: 100px;
-  text-align: center;
-  text-decoration: none;
-  line-height: 40px;
-  text-shadow: 1px 1px 0px #283744;
-  font-size: 14pt;
-}
-nav.clearfix li a {
-  border-right: 1px solid #576979;
-  box-sizing:border-box;
-  -moz-box-sizing:border-box;
-  -webkit-box-sizing:border-box;
-}
-nav.clearfix li:first-child a {
-  border-left: 1px solid #333;
-}
-nav.clearfix a:hover, nav.clearfix a:active {
-  background-color: #8c99a4;
-}
-nav.clearfix a#pull {
-  display: none;
-}  
+
 /*menu media queries*/
 
 @media only screen and (max-width : 480px) {
@@ -1115,7 +1164,14 @@ nav.clearfix a#pull {
     border-bottom: 1px solid #576979;
   }
   #allaboard, #bookshelf, #gifhunter, #publicart{
-		width:280px;
+		width:75%;
+		margin: 0 auto;
+	}
+	#allaboardp{
+		margin:0 auto;
+		width:75%;
+		margin-left:-20px;
+		clear:both;
 	}
 }
 
@@ -1148,32 +1204,5 @@ input#mailSubmit{
 
 #mailSubmit:hover{
 	background-color: #4A6E71;
-}
-
-.menuHeader ul {
-      padding:0;
-      margin:0;
-  }
-.menuHeader li {
-        display: inline-block;
-        float: left;
-        list-style: none;
-        padding: 0 0 0 5px;
-        margin: 0;
-      }
-
-.menuIcon {
-    display: none;
-    background: #000;
-    width: 100%;
-    text-align: center;
-}
-.menuIcon:hover {
-      background: #999;
-    }
-.menuIcon a {
-	width: 100%;
-      display: inline-block;
-      color: #fff;
 }
 
