@@ -715,6 +715,22 @@ div.section.block img{
 	text-align: left;
 }
 
+#giftech{
+	margin-left:4em;
+}
+
+#giftitle{
+	margin-left:6.25em;
+}
+
+#gifbuttonwrap{
+	margin-left:5.45em;
+}
+
+#gifp{
+		margin-left:4em;
+	}
+
 #gifhunter, #publicart{
 	margin-top: 20px;
 }
@@ -987,19 +1003,20 @@ ul.contacts a{
 	}
 
 	#allaboardWrapper{
-		text-align: center;
+		text-align: left;
 	}
 
 	#allaboardContent{
 		float:none;
 		width:80%;
 		margin:0 auto;
+		text-align: left;
 	}
 
 	#bookshelfTech{
 		margin:0 auto;
 		text-align: center;
-		margin-right:2.5em;
+		width:100%;
 
 	}
 	#bookshelfDescription{
@@ -1007,14 +1024,17 @@ ul.contacts a{
 		margin:0 auto;
 		margin-bottom:30px;
 	}
+	#bookshelfDemoButton{
+		text-align: left;
+	}
 	#giftitle{
 		margin-top:4em;
+		margin-left:0;
 	}
 	#gifhunterContent{
 		width:80%;
 		margin:0 auto;
-		margin-bottom: 8em;
-		
+		margin-bottom: 8em;	
 	}
 
 	#giftech{
@@ -1034,12 +1054,13 @@ ul.contacts a{
 
 	#artbuttonwrapper{
 		float:none;
-		text-align: center;
+		text-align: left;
 		margin:0 auto;
 	}
 
 	#artparagraph{
 		margin:0 auto;
+		text-align: left;
 	}
 
 	#artTechUsed{
@@ -1169,6 +1190,16 @@ ul.contacts a{
   }
   #allaboard, #bookshelf, #gifhunter, #publicart{
 		width:320px;
+	}
+
+	#artTitle{
+		margin-top:50px;
+	}
+	#gifbuttonwrap{
+		width:100%;
+	}
+	#giftitle{
+		margin-top:8em;
 	}
 }
 
