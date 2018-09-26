@@ -387,6 +387,20 @@ div.icon {
 	opacity: .55;
 	
 }
+
+/*.no-webp .overlay {
+  background-image: url("../img/Panoramic_Boston.jpg");
+}
+
+.webp .overlay{
+  background-image: url("../img/Panoramic_Boston.webp");
+  position: absolute;
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-size: cover; 
+	opacity: .55;
+}*/
 .herowrapper {
 	position: absolute;
 	top: 50%;
